@@ -100,30 +100,30 @@ collections:
               - { label: "Long Description", name: "longDescription", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
-  - name: "familyimage1"
-    label: "Family Image 1"
+  - name: "slider1"
+    label: "Family Image VR Ajith"
     files:
       - file: "data2/familyimage1.json"
         label: "Family Image 1"
-        name: "familyimage1"
+        name: "slider1"
         fields:
           - label: "Family Image 1"
-            name: "familyimage1"
+            name: "slider1"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
 
-  - name: "familyimage2"
-    label: "Family Image 2"
+  - name: "slider2"
+    label: "Family Image L Jayasree "
     files:
       - file: "data2/familyimage2.json"
         label: "Family Image 2"
-        name: "familyimage2"
+        name: "slider2"
         fields:
           - label: "Family Image 2"
-            name: "familyimage2"
+            name: "slider2
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
