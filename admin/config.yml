@@ -247,7 +247,7 @@ collections:
         name: "childrens-writing"
         fields:
           - label: "Children's Writing List"
-            name: "childrensWriting"
+            name: "childrens-writing"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
