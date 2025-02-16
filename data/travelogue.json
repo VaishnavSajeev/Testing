@@ -1,0 +1,11 @@
+{
+  "travelogue": [
+    {
+      "id": 100000,
+      "title": "travelll",
+      "shortDescription": "sdsdsddsds",
+      "longDescription": "sdsdsdds",
+      "image": "/image/photo-bg.jpg"
+    }
+  ]
+}
