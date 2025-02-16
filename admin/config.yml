@@ -66,15 +66,15 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
-  - name: "news1"
-    label: "News 1"
+  - name: "newsList"
+    label: "PFBS News "
     files:
       - file: "data2/news1.json"
         label: "News 1"
-        name: "news1"
+        name: "newsList"
         fields:
           - label: "News 1"
-            name: "news1"
+            name: "newsList"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
@@ -82,15 +82,15 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
-  - name: "news2"
-    label: "News 2"
+  - name: "newsList"
+    label: "News & Updates"
     files:
       - file: "data2/news2.json"
         label: "News 2"
-        name: "news2"
+        name: "newsList"
         fields:
           - label: "News 2"
-            name: "news2"
+            name: "newsList"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
