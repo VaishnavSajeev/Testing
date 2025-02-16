@@ -10,8 +10,7 @@ public_folder: "/images"  # Path to access images on the site
 collections:
   - name: "highlights"
     label: "Highlights"
-    file: "data/highlights.json"
-    extension: "json"
+    file: "data/highlights.json"  # Correct path to the single JSON file
     format: "json"
     fields:
       - { label: "ID", name: "id", widget: "number" }
@@ -19,6 +18,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Href", name: "href", widget: "string" }
+
 
   - name: "novels"
     label: "Novels"
