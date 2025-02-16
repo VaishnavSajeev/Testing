@@ -125,7 +125,6 @@ collections:
             name: "slider1"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
 
@@ -140,7 +139,6 @@ collections:
             name: "slider2"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
 
