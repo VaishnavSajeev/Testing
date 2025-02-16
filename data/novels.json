@@ -1,23 +1,25 @@
-[
-  {
-    "id": 101,
-    "title": "The Silent Witness",
-    "shortDescription": "A thrilling mystery novel.",
-    "longDescription": "Follow detective Jane as she unravels a web of deceit and crime in a sleepy town.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  },
-  {
-    "id": 102,
-    "title": "Into the Wild",
-    "shortDescription": "An adventure in the untamed wilderness.",
-    "longDescription": "Embark on an unforgettable journey through wild terrains and perilous adventures.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  },
-  {
-    "id": 103,
-    "title": "A Tale of Two Hearts",
-    "shortDescription": "A heartwarming romance.",
-    "longDescription": "Two strangers meet under unexpected circumstances, finding love along the way.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  }
-]
+{
+  "novels": [
+    {
+      "id": 101,
+      "title": "The Silent Witness",
+      "shortDescription": "A thrilling mystery novel.",
+      "longDescription": "Follow detective Jane as she unravels a web of deceit and crime in a sleepy town.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 102,
+      "title": "Into the Wild",
+      "shortDescription": "An adventure in the untamed wilderness.",
+      "longDescription": "Embark on an unforgettable journey through wild terrains and perilous adventures.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 103,
+      "title": "A Tale of Two Hearts",
+      "shortDescription": "A heartwarming romance.",
+      "longDescription": "Two strangers meet under unexpected circumstances, finding love along the way.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    }
+  ]
+}
