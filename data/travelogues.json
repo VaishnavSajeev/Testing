@@ -1,16 +1,18 @@
-[
-  {
-    "id": 401,
-    "title": "Journey Through the Alps",
-    "shortDescription": "A breathtaking travel experience.",
-    "longDescription": "Experience the beauty and serenity of the majestic Alps.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  },
-  {
-    "id": 402,
-    "title": "Discovering Bali",
-    "shortDescription": "A tropical paradise adventure.",
-    "longDescription": "Immerse yourself in the vibrant culture and stunning landscapes of Bali.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  }
-]
+{
+  "travelogues": [
+    {
+      "id": 401,
+      "title": "Journey Through the Alps",
+      "shortDescription": "A breathtaking travel experience.",
+      "longDescription": "Experience the beauty and serenity of the majestic Alps.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 402,
+      "title": "Discovering Bali",
+      "shortDescription": "A tropical paradise adventure.",
+      "longDescription": "Immerse yourself in the vibrant culture and stunning landscapes of Bali.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    }
+  ]
+}
