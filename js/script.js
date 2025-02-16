@@ -21,7 +21,7 @@ async function fetchAndMergeHighlights() {
     const response = await fetch("data/highlights.json"); // Update with your JSON file path
     if (!response.ok) throw new Error("Failed to fetch JSON data");
 
-    const jsonHighlights = await response.json();
+    const {jsonHighlights} = await response.json();
 
     // Merge the two lists
     highlightsList = [...jsonHighlights, ...highlightsList].reverse();
