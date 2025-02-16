@@ -222,15 +222,15 @@ collections:
               - { label: "Long Description", name: "longDescription", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
-  - name: "travelogue"
-    label: "Travelogue"
+  - name: "travelogues"
+    label: "Travelogues"
     files:
       - file: "data/travelogues.json"
-        label: "Travelogue"
-        name: "travelogue"
+        label: "Travelogues"
+        name: "travelogues"
         fields:
-          - label: "Travelogue List"
-            name: "travelogue"
+          - label: "Travelogues List"
+            name: "travelogues"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
