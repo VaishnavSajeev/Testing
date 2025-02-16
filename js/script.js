@@ -21,10 +21,11 @@ async function fetchAndMergeHighlights() {
     const response = await fetch("data/highlights.json"); // Update with your JSON file path
     if (!response.ok) throw new Error("Failed to fetch JSON data");
 
-    const {jsonHighlights} = await response.json();
+    // Extract the nested "highlights" array
+    const { highlights } = await response.json();
 
     // Merge the two lists
-    highlightsList = [...jsonHighlights, ...highlightsList].reverse();
+    highlightsList = [...highlights, ...highlightsList].reverse();
 
     // Render the updated highlights list
     renderHighlights();
@@ -36,6 +37,7 @@ async function fetchAndMergeHighlights() {
 // Render highlights list on the index page
 function renderHighlights() {
   const highlightsContainer = document.getElementById("highlights");
+  highlightsContainer.innerHTML = ""; // Clear container before rendering
   highlightsList.forEach((highlight) => {
     const cardHTML = `
       <div class="col-md-4 mb-4">
