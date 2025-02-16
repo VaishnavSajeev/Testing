@@ -61,10 +61,10 @@ async function fetchAndMergeNovels() {
     const response = await fetch("data/novels.json"); // Update with your JSON file path
     if (!response.ok) throw new Error("Failed to fetch novels JSON data");
 
-    const jsonNovels = await response.json();
+    const { novels } = await response.json();
 
     // Merge the two lists
-    novelsList = [...jsonNovels, ...novelsList];
+    novelsList = [...novels, ...novelsList];
 
     // Render the updated novels list
     renderNovels();
@@ -123,8 +123,8 @@ async function fetchAllListsForDetails() {
     const articlesJSON = await articlesRes.json();
 
     // Merge JSON data with existing lists
-    highlightsList = [...highlightsJSON, ...highlightsList];
-    novelsList = [...novelsJSON, ...novelsList];
+    highlightsList = [...highlightsJSON.highlights, ...highlightsList];
+    novelsList = [...novelsJSON.novels, ...novelsList];
     childrensWritingList = [...childrensJSON, ...childrensWritingList];
     shortStoriesList = [...shortStoriesJSON, ...shortStoriesList];
     traveloguesList = [...traveloguesJSON, ...traveloguesList];
