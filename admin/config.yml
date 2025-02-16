@@ -213,7 +213,7 @@ collections:
         name: "short-stories"
         fields:
           - label: "Short Stories List"
-            name: "shortStories"
+            name: "short-stories"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
