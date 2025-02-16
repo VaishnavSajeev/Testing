@@ -57,10 +57,14 @@ collections:
         label: "Projects"
         name: "projects"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "news1"
     label: "News 1"
@@ -69,10 +73,14 @@ collections:
         label: "News 1"
         name: "news1"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "News 1"
+            name: "news1"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "news2"
     label: "News 2"
@@ -81,10 +89,14 @@ collections:
         label: "News 2"
         name: "news2"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "News 2"
+            name: "news2"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "familyimage1"
     label: "Family Image 1"
@@ -93,9 +105,13 @@ collections:
         label: "Family Image 1"
         name: "familyimage1"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "Family Image 1"
+            name: "familyimage1"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "familyimage2"
     label: "Family Image 2"
@@ -104,9 +120,13 @@ collections:
         label: "Family Image 2"
         name: "familyimage2"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "Family Image 2"
+            name: "familyimage2"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "familyvideo1"
     label: "Family Video 1"
@@ -115,9 +135,13 @@ collections:
         label: "Family Video 1"
         name: "familyvideo1"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Video URL", name: "videoUrl", widget: "string" }
+          - label: "Family Video 1"
+            name: "familyvideo1"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "videoUrl", widget: "string" }
 
   - name: "familyvideo2"
     label: "Family Video 2"
@@ -126,9 +150,13 @@ collections:
         label: "Family Video 2"
         name: "familyvideo2"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Video URL", name: "videoUrl", widget: "string" }
+          - label: "Family Video 2"
+            name: "familyvideo2"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "videoUrl", widget: "string" }
 
   - name: "imagegallery"
     label: "Image Gallery"
@@ -137,9 +165,13 @@ collections:
         label: "Image Gallery"
         name: "imagegallery"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image URL", name: "imageUrl", widget: "string" }
+          - label: "Image Gallery"
+            name: "imagegallery"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image URL", name: "imageUrl", widget: "string" }
 
   - name: "videogallery"
     label: "Video Gallery"
@@ -148,7 +180,12 @@ collections:
         label: "Video Gallery"
         name: "videogallery"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Video URL", name: "videoUrl", widget: "string" }
+          - label: "Video Gallery"
+            name: "videogallery"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "videoUrl", widget: "string" }
+
 
