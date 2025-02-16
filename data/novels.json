@@ -20,6 +20,13 @@
       "shortDescription": "A heartwarming romance.",
       "longDescription": "Two strangers meet under unexpected circumstances, finding love along the way.",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 104,
+      "title": "test novel",
+      "shortDescription": "this is test novel",
+      "longDescription": "dsdsdssdsddssd",
+      "image": "/image/news-bg.jpg"
     }
   ]
 }
