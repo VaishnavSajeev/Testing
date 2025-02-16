@@ -1,0 +1,10 @@
+{
+  "slider1": [
+    { "imgSrc": "placeholder.png", "name": "John Doe" },
+    { "imgSrc": "placeholder.png", "name": "Jane Smith" },
+    { "imgSrc": "placeholder.png", "name": "Mike Johnson" },
+    { "imgSrc": "placeholder.png", "name": "Emily Davis" },
+    { "imgSrc": "placeholder.png", "name": "Chris Wilson" },
+    { "imgSrc": "placeholder.png", "name": "Sophia Brown" }
+  ]
+}
