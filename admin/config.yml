@@ -188,4 +188,72 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Video URL", name: "videoUrl", widget: "string" }
 
+  - name: "articles"
+    label: "Articles"
+    files:
+      - file: "data/articles.json"
+        label: "Articles"
+        name: "articles"
+        fields:
+          - label: "Articles List"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+  - name: "short-stories"
+    label: "Short Stories"
+    files:
+      - file: "data/short-stories.json"
+        label: "Short Stories"
+        name: "short-stories"
+        fields:
+          - label: "Short Stories List"
+            name: "shortStories"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+  - name: "travelogue"
+    label: "Travelogue"
+    files:
+      - file: "data/travelogue.json"
+        label: "Travelogue"
+        name: "travelogue"
+        fields:
+          - label: "Travelogue List"
+            name: "travelogue"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+  - name: "childrens-writing"
+    label: "Children's Writing"
+    files:
+      - file: "data/childrens-writing.json"
+        label: "Children's Writing"
+        name: "childrens-writing"
+        fields:
+          - label: "Children's Writing List"
+            name: "childrensWriting"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
 
