@@ -10,9 +10,7 @@ public_folder: "/images"  # Path to access images on the site
 collections:
   - name: "highlights"
     label: "Highlights"
-    folder: "data"
-    create: true
-    slug: "{{slug}}"
+    file: "data/highlights.json"
     extension: "json"
     format: "json"
     fields:
