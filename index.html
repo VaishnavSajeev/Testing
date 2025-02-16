@@ -157,23 +157,11 @@
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", (user) => {
       if (!user) {
-        // Check for the invite token in the URL
-        const token = new URL(window.location.href).hash.match(/invite_token=([^&]+)/);
-        if (token) {
-          // Accept the invite with the token
-          window.netlifyIdentity.acceptInvite(token[1], true).then(() => {
-            window.location.href = "/admin/";
-          }).catch((err) => console.error("Invite acceptance failed:", err));
-        }
-
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/admin/";
         });
       }
     });
-
-    // Ensure Netlify Identity is initialized
-    window.netlifyIdentity.init();
   }
 </script>
 
