@@ -11,7 +11,7 @@ collections:
   - name: "highlights"
     label: "Highlights"
     files:
-      - file: "data/highlights.json"  # Correct path to the single JSON file
+      - file: "data/highlights.json" # Path to the existing JSON file
         label: "Highlights"
         name: "highlights"
         fields:
@@ -20,7 +20,6 @@ collections:
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Href", name: "href", widget: "string" }
-
 
 
   - name: "novels"
