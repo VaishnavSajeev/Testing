@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+
+nav {
+  padding: 0;
+  border-bottom: 2px solid rgb(251, 94, 37);
+}
+
+body {
+  background-color: rgba(239, 212, 178, 0.123);
+  padding: 0 180px;
+}
+.hero-title {
+  font-family: "Imperial Script", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-sub-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.underline-orange {
+  text-decoration: underline;
+  text-decoration-color: rgb(251, 94, 37);
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(251, 94, 37) !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgb(108, 31, 3) !important; /* Darker red on hover */
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(251, 94, 37) !important; /* Change dot color */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(251, 94, 37) !important; /* Change active dot color */
+  opacity: 1;
+}
+/* Contact Page */
+
+.orange {
+  background-color: rgb(251, 94, 37);
+}
+.orange-text {
+  color: rgba(29, 9, 2, 0.922);
+}
+
+.orange-solid-text {
+  color: rgb(251, 94, 37);
+}
+
+.about-justify {
+  text-align: justify;
+}
+
+.orange-btn {
+  background-color: rgb(251, 94, 37);
+}
+.reponse-msg {
+  background-color: rgb(251, 94, 37);
+  color: white;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+}
+/*  */
+
+/* Family page */
+
+.family-name {
+  background-color: rgba(251, 94, 37, 0.322);
+  display: inline;
+}
+
+/*  */
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  body {
+    padding: 0 32px;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pen And Paths</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Pen and Paths</h1>
+      <nav class="navbar navbar-expand-lg text-uppercase">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home Page</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/people.html"
+                  >People for Better Society</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/family.html">Family Tree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/photo.html">Photo Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/video.html">Video Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/news.html">News and Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-4">
+        <div id="highlight-details" class="row justify-content-center"></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      fetchAllListsForDetails();
+    </script>
+  </body>
+</html>

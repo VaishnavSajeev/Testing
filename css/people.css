@@ -1,0 +1,36 @@
+.people-hero-img {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pfbs-about {
+  text-align: justify;
+}
+
+.support-card {
+  padding-bottom: 87px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

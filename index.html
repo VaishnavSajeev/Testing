@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pen And Paths</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Pen and Paths</h1>
+      <nav class="navbar navbar-expand-lg text-uppercase">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 nav-fill">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Creative Writings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#novels">Novels</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#childrens-writing"
+                      >Children's Literature</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#short-stories"
+                      >Short Stories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#travelogues">Travelouges</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#articles">Articles</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/people.html"
+                  >People for Better Society</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/family.html">Family Tree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/photo.html">Photo Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/video.html">Video Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/news.html">News and Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-4">
+      <section>
+        <div class="hero-main container-flud">
+          <div class="row">
+            <div class="col-lg-9 col-md-12">
+              <h3 class="my-4 hero-sub-title">Highlights</h3>
+              <div class="row" id="highlights"></div>
+              <h6 class="text-center">
+                "Weaving words into worlds, one story at a time."
+              </h6>
+            </div>
+            <div class="col-lg-3 text-center d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="image/portrait_ajith.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Full Name</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <a href="/contact.html" class="card-link orange-solid-text"
+                    >About / Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="hero-sub-title mt-5">Creative Writings</h3>
+        <h1 class="text-center hero-sub-title mt-5">Novels</h1>
+        <div id="novels" class="row d-flex justify-content-center"></div>
+
+        <h1 class="text-center hero-sub-title mt-5">Children's Writing</h1>
+        <div
+          id="childrens-writing"
+          class="row d-flex justify-content-center"
+        ></div>
+
+        <h1 class="text-center hero-sub-title mt-5">Short Stories</h1>
+        <div id="short-stories" class="row d-flex justify-content-center"></div>
+
+        <h1 class="text-center hero-sub-title mt-5">Travelogues</h1>
+        <div id="travelogues" class="row d-flex justify-content-center"></div>
+
+        <h1 class="text-center hero-sub-title mt-5">Articles</h1>
+        <div id="articles" class="row d-flex justify-content-center"></div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/content.js"></script>
+  </body>
+</html>

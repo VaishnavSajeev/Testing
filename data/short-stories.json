@@ -1,0 +1,16 @@
+[
+  {
+    "id": 301,
+    "title": "The Last Sunset",
+    "shortDescription": "A story of love and loss.",
+    "longDescription": "As the sun sets for the last time, memories of a beautiful life resurface.",
+    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+  },
+  {
+    "id": 302,
+    "title": "Whispers in the Wind",
+    "shortDescription": "A tale of hope and courage.",
+    "longDescription": "In a small village, whispers in the wind carry messages of hope.",
+    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+  }
+]

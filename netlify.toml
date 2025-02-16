@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # Or whatever your build command is (for static HTML, this can be empty)
+  publish = "./" # The folder Netlify will serve (root for static HTML)
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
