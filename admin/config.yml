@@ -35,19 +35,11 @@ collections:
         label: "Novels"
         name: "novels"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Short Description",
-              name: "shortDescription",
-              widget: "text",
-            }
-          - {
-              label: "Long Description",
-              name: "longDescription",
-              widget: "text",
-            }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "ID", name: "id", widget: "number"
+          - label: "Title", name: "title", widget: "string"
+          - label: "Short Description", name: "shortDescription", widget: "text"
+          - label: "Long Description", name: "longDescription", widget: "text"
+          - label: "Image", name: "image", widget: "image"
 
   - name: "projects"
     label: "Projects"
