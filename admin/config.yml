@@ -1,17 +1,15 @@
 backend:
   name: git-gateway
-  branch: main  # Adjust if your main branch is named differently
+  branch: main # Adjust if your main branch is named differently
 
-media_folder: "image"  # Where images are stored in the repo
-public_folder: "/image"  # Path to access images on the site
-
-
+media_folder: "image" # Where images are stored in the repo
+public_folder: "/image" # Path to access images on the site
 
 collections:
   - name: "highlights"
     label: "Highlights"
     files:
-      - file: "data/highlights.json"  
+      - file: "data/highlights.json"
         label: "Highlights"
         name: "highlights"
         fields:
@@ -79,8 +77,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "news2"
@@ -96,8 +102,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "slider1"
@@ -116,14 +130,14 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "slider2"
-    label: "Family Image L Jayasree "
+    label: "Family Image Jayasree"
     files:
       - file: "data2/familyimage2.json"
-        label: "Family Image 2"
+        label: "Family Image 1"
         name: "slider2"
         fields:
-          - label: "Family Image 2"
-            name: "slider2
+          - label: "Family Image 1"
+            name: "slider2"
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "number" }
@@ -203,8 +217,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "short-stories"
@@ -220,8 +242,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "travelogues"
@@ -237,8 +267,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "childrens-writing"
@@ -254,8 +292,14 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Short Description", name: "shortDescription", widget: "text" }
-              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
-
-
