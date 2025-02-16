@@ -225,7 +225,7 @@ collections:
   - name: "travelogue"
     label: "Travelogue"
     files:
-      - file: "data/travelogue.json"
+      - file: "data/travelogues.json"
         label: "Travelogue"
         name: "travelogue"
         fields:
