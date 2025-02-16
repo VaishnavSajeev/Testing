@@ -122,13 +122,23 @@ async function fetchAllListsForDetails() {
     const traveloguesJSON = await traveloguesRes.json();
     const articlesJSON = await articlesRes.json();
 
+    // Extract category-specific arrays from JSON structure
+    const highlightsData = highlightsJSON["highlights"] || [];
+    const novelsData = novelsJSON["novels"] || [];
+    const childrensData = childrensJSON["childrens-writing"] || [];
+    console.log(childrensData);
+
+    const shortStoriesData = shortStoriesJSON["short-stories"] || [];
+    const traveloguesData = traveloguesJSON["travelogues"] || [];
+    const articlesData = articlesJSON["articles"] || [];
+
     // Merge JSON data with existing lists
-    highlightsList = [...highlightsJSON.highlights, ...highlightsList];
-    novelsList = [...novelsJSON.novels, ...novelsList];
-    childrensWritingList = [...childrensJSON, ...childrensWritingList];
-    shortStoriesList = [...shortStoriesJSON, ...shortStoriesList];
-    traveloguesList = [...traveloguesJSON, ...traveloguesList];
-    articlesList = [...articlesJSON, ...articlesList];
+    highlightsList = [...highlightsData, ...highlightsList];
+    novelsList = [...novelsData, ...novelsList];
+    childrensWritingList = [...childrensData, ...childrensWritingList];
+    shortStoriesList = [...shortStoriesData, ...shortStoriesList];
+    traveloguesList = [...traveloguesData, ...traveloguesList];
+    articlesList = [...articlesData, ...articlesList];
 
     // After fetching and merging, display the details
     displayHighlightDetails();
@@ -174,7 +184,5 @@ function displayHighlightDetails() {
 // On page load, fetch JSON and then display details
 
 // Call render functions if the containers exist
-// if (document.getElementById("highlights")) renderHighlights();
 if (document.getElementById("highlights")) fetchAndMergeHighlights();
-// if (document.getElementById("novels")) renderNovels();
 if (document.getElementById("novels")) fetchAndMergeNovels();
