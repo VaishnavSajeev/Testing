@@ -1,16 +1,18 @@
-[
-  {
-    "id": 501,
-    "title": "The Future of Technology",
-    "shortDescription": "Exploring advancements in AI and robotics.",
-    "longDescription": "An in-depth analysis of emerging technologies and their impact on society.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  },
-  {
-    "id": 502,
-    "title": "Mindfulness for Mental Health",
-    "shortDescription": "The benefits of mindfulness practices.",
-    "longDescription": "Discover how mindfulness can improve your mental and emotional well-being.",
-    "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-  }
-]
+{
+  "articles": [
+    {
+      "id": 501,
+      "title": "The Future of Technology",
+      "shortDescription": "Exploring advancements in AI and robotics.",
+      "longDescription": "An in-depth analysis of emerging technologies and their impact on society.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 502,
+      "title": "Mindfulness for Mental Health",
+      "shortDescription": "The benefits of mindfulness practices.",
+      "longDescription": "Discover how mindfulness can improve your mental and emotional well-being.",
+      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    }
+  ]
+}
