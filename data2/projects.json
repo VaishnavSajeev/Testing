@@ -1,16 +1,19 @@
-[
-  {
-    "id": 601,
-    "title": "Green Earth Initiative",
-    "shortDescription": "An environmental sustainability project.",
-    "longDescription": "A global effort to promote sustainable practices and reduce carbon footprints.",
-    "image": "image/placeholder.png"
-  },
-  {
-    "id": 602,
-    "title": "Tech for Education",
-    "shortDescription": "Bringing technology to classrooms.",
-    "longDescription": "A project focused on providing digital resources to underprivileged schools worldwide.",
-    "image": "image/placeholder.png"
-  }
-]
+{
+  "projects": [
+    {
+      "id": 601,
+      "title": "Green Earth Initiative",
+      "shortDescription": "An environmental sustainability project.",
+      "longDescription": "A global effort to promote sustainable practices and reduce carbon footprints.",
+      "image": "image/placeholder.png"
+    },
+    {
+      "id": 602,
+      "title": "Tech for Education",
+      "shortDescription": "Bringing technology to classrooms.",
+      "longDescription": "A project focused on providing digital resources to underprivileged schools worldwide.",
+      "image": "image/placeholder.png"
+    }
+  ]
+}
+
