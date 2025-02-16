@@ -25,19 +25,24 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Href", name: "href", widget: "string" }
 
-collections:
   - name: "novels"
     label: "Novels"
+    editor:
+      preview: false
     files:
       - file: "data/novels.json"
         label: "Novels"
         name: "novels"
         fields:
-          - { label: "ID", name: "id", widget: "number" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Short Description", name: "shortDescription", widget: "text" }
-          - { label: "Long Description", name: "longDescription", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - label: "Novels"
+            name: "novels"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Long Description", name: "longDescription", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "projects"
     label: "Projects"
