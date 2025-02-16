@@ -25,6 +25,7 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Href", name: "href", widget: "string" }
 
+collections:
   - name: "novels"
     label: "Novels"
     files:
