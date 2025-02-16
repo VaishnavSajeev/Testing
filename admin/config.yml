@@ -27,8 +27,6 @@ collections:
 
   - name: "novels"
     label: "Novels"
-    editor:
-      preview: false
     files:
       - file: "data/novels.json"
         label: "Novels"
