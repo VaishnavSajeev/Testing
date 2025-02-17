@@ -171,7 +171,7 @@ function displayHighlightDetails() {
     const highlightDetailsContainer =
       document.getElementById("highlight-details");
     highlightDetailsContainer.innerHTML = `
-      <div class="col-md-8">
+      <div class="col-md-8 w-100">
         <div class="card">
           <img src="${item.image}" class="card-img-top" alt="${item.title}">
           <div class="card-body">
