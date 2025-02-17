@@ -1,39 +1,4 @@
-const youtubeVideos1 = [
-  {
-    url: "https://www.youtube.com/watch?v=SXpAOKY6g48",
-    title: "Tile 1",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=cCgn3H4UJr0",
-    title: "Tile 2",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=IkudDf-qRrY",
-    title: "Tile 3",
-  },
-  { url: "https://www.youtube.com/watch?v=xnWBZQ7wkb4", title: "Tile 4" },
-  {
-    url: "https://www.youtube.com/watch?v=iy5SqM0bnqI",
-    title: "Tile 5",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=SXpAOKY6g48",
-    title: "Tile 1",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=cCgn3H4UJr0",
-    title: "Tile 2",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=IkudDf-qRrY",
-    title: "Tile 3",
-  },
-  { url: "https://www.youtube.com/watch?v=xnWBZQ7wkb4", title: "Tile 4" },
-  {
-    url: "https://www.youtube.com/watch?v=iy5SqM0bnqI",
-    title: "Tile 5",
-  },
-];
+let youtubeVideos1 = [];
 
 function getYouTubeID(url) {
   let match = url.match(
@@ -41,6 +6,27 @@ function getYouTubeID(url) {
   );
   return match ? match[1] : null;
 }
+
+async function fetchAndMergeYouTubeVideos() {
+  try {
+    const [familyvideo1Response] = await Promise.all([
+      fetch("data2/videogallery.json"),
+    ]);
+
+    const [familyvideo1Json] = await Promise.all([familyvideo1Response.json()]);
+
+    // Merge JSON data with existing YouTube video lists
+    youtubeVideos1 = [...youtubeVideos1, ...familyvideo1Json.youtubeVideos1];
+
+    // Generate slides for both YouTube sliders
+    generateYouTubeSlides(youtubeVideos1, "youtubeSlider1");
+  } catch (error) {
+    console.error("Error fetching YouTube JSON data:", error);
+  }
+}
+
+// Call the function to fetch and merge YouTube videos
+fetchAndMergeYouTubeVideos();
 
 // Function to generate YouTube slides
 function generateYouTubeSlides(videoList, containerId) {
