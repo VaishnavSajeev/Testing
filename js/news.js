@@ -1,22 +1,21 @@
 // Render functions for the new sections
-const newsList = [
-  {
-    id: 701,
-    title: "New Research on Renewable Energy",
-    shortDescription: "Scientists discover a new way to store solar energy.",
-    longDescription:
-      "A breakthrough in solar energy storage could revolutionize the renewable energy industry.",
-    image: "image/placeholder.png",
-  },
-  {
-    id: 702,
-    title: "Tech Startup Raises $50M",
-    shortDescription: "Innovative AI company secures funding for expansion.",
-    longDescription:
-      "A promising startup focused on AI technology just secured major investment backing.",
-    image: "image/placeholder.png",
-  },
-].reverse();
+let newsList = [].reverse();
+
+async function fetchAndMergeNews() {
+  try {
+    const [newsResponse] = await Promise.all([fetch("data2/news2.json")]);
+
+    const [newsJson] = await Promise.all([newsResponse.json()]);
+
+    // Merge JSON data with existing lists
+    newsList = [...newsList, ...newsJson.newsList];
+
+    // Display updated content
+    displayNews();
+  } catch (error) {
+    console.error("Error fetching JSON data:", error);
+  }
+}
 
 function displayNews() {
   const container = document.getElementById("news-container");
@@ -29,7 +28,7 @@ function displayNews() {
         <div class="card-body">
           <h5 class="card-title">${news.title}</h5>
           <p class="card-text">${news.shortDescription}</p>
-          <a href="people-details.html?id=${news.id}" class="btn btn-primary orange-btn">Read More</a>
+          <a href="details.html?id=${news.id}" class="btn btn-primary orange-btn">Read More</a>
         </div>
       </div>
     </div>
@@ -37,3 +36,5 @@ function displayNews() {
     )
     .join("");
 }
+
+fetchAndMergeNews();
