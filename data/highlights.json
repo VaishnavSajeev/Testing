@@ -17,6 +17,12 @@
       "title": "Upcoming Events",
       "description": "Cook up a storm with these mouthwatering recipes.",
       "image": "image/highlight-event.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "testing highlights",
+      "description": "dasdsadsadds",
+      "image": "/image/news-bg.jpg"
     }
   ]
 }
