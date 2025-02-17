@@ -1,62 +1,39 @@
-const slider1Data = [
-  { imgSrc: "placeholder.png", name: "John Doe" },
-  { imgSrc: "placeholder.png", name: "Jane Smith" },
-  { imgSrc: "placeholder.png", name: "Mike Johnson" },
-  { imgSrc: "placeholder.png", name: "Emily Davis" },
-  { imgSrc: "placeholder.png", name: "Chris Wilson" },
-  { imgSrc: "placeholder.png", name: "Sophia Brown" },
-];
+let slider1Data = [];
 
 // List of objects for second slider
-const slider2Data = [
-  { imgSrc: "placeholder.png", name: "Daniel Lee" },
-  { imgSrc: "placeholder.png", name: "Olivia Clark" },
-  { imgSrc: "placeholder.png", name: "Liam Martinez" },
-  { imgSrc: "placeholder.png", name: "Emma White" },
-  { imgSrc: "placeholder.png", name: "James Anderson" },
-  { imgSrc: "placeholder.png", name: "Ava Thomas" },
-];
+let slider2Data = [];
 
-const youtubeVideos1 = [
-  {
-    url: "https://www.youtube.com/watch?v=SXpAOKY6g48",
-    title: "Tile 1",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=cCgn3H4UJr0",
-    title: "Tile 2",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=IkudDf-qRrY",
-    title: "Tile 3",
-  },
-  { url: "https://www.youtube.com/watch?v=xnWBZQ7wkb4", title: "Tile 4" },
-  {
-    url: "https://www.youtube.com/watch?v=iy5SqM0bnqI",
-    title: "Tile 5",
-  },
-];
+let youtubeVideos1 = [];
 
 // List of YouTube videos for second slider
-const youtubeVideos2 = [
-  {
-    url: "https://www.youtube.com/watch?v=SXpAOKY6g48",
-    title: "Tile 1",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=cCgn3H4UJr0",
-    title: "Tile 2",
-  },
-  {
-    url: "https://www.youtube.com/watch?v=IkudDf-qRrY",
-    title: "Tile 3",
-  },
-  { url: "https://www.youtube.com/watch?v=xnWBZQ7wkb4", title: "Tile 4" },
-  {
-    url: "https://www.youtube.com/watch?v=iy5SqM0bnqI",
-    title: "Tile 5",
-  },
-];
+let youtubeVideos2 = [];
+
+async function fetchAndMergeFamilyImages() {
+  try {
+    const [familyimage1Response, familyimage2Response] = await Promise.all([
+      fetch("data2/familyimage1.json"),
+      fetch("data2/familyimage2.json"),
+    ]);
+
+    const [familyimage1Json, familyimage2Json] = await Promise.all([
+      familyimage1Response.json(),
+      familyimage2Response.json(),
+    ]);
+
+    // Merge JSON data with existing slider data
+    slider1Data = [...slider1Data, ...familyimage1Json.slider1];
+    slider2Data = [...slider2Data, ...familyimage2Json.slider2];
+
+    // Generate slides for both sliders
+    generateSlides(slider1Data, "slider1");
+    generateSlides(slider2Data, "slider2");
+  } catch (error) {
+    console.error("Error fetching JSON data:", error);
+  }
+}
+
+// Call the function to fetch and merge JSON data
+fetchAndMergeFamilyImages();
 
 // Function to generate slides dynamically
 function generateSlides(sliderData, containerId) {
@@ -132,6 +109,33 @@ function getYouTubeID(url) {
   );
   return match ? match[1] : null;
 }
+
+async function fetchAndMergeYouTubeVideos() {
+  try {
+    const [familyvideo1Response, familyvideo2Response] = await Promise.all([
+      fetch("data2/familyvideo1.json"),
+      fetch("data2/familyvideo2.json"),
+    ]);
+
+    const [familyvideo1Json, familyvideo2Json] = await Promise.all([
+      familyvideo1Response.json(),
+      familyvideo2Response.json(),
+    ]);
+
+    // Merge JSON data with existing YouTube video lists
+    youtubeVideos1 = [...youtubeVideos1, ...familyvideo1Json.youtubeVideos1];
+    youtubeVideos2 = [...youtubeVideos2, ...familyvideo2Json.youtubeVideos2];
+
+    // Generate slides for both YouTube sliders
+    generateYouTubeSlides(youtubeVideos1, "youtubeSlider1");
+    generateYouTubeSlides(youtubeVideos2, "youtubeSlider2");
+  } catch (error) {
+    console.error("Error fetching YouTube JSON data:", error);
+  }
+}
+
+// Call the function to fetch and merge YouTube videos
+fetchAndMergeYouTubeVideos();
 
 // Function to generate YouTube slides
 function generateYouTubeSlides(videoList, containerId) {
