@@ -185,7 +185,7 @@ collections:
             fields:
               - { label: "Image URL", name: "filename", widget: "image" }
 
-  - name: "youtubeVideos1"
+  - name: "youtubeVideos3"
     label: "Video Archive"
     files:
       - file: "data2/videogallery.json"
