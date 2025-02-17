@@ -196,9 +196,12 @@ collections:
             name: "youtubeVideos1"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - {
+                  label: "Youtbe Video URL Link",
+                  name: "url",
+                  widget: "string",
+                }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Video URL", name: "videoUrl", widget: "string" }
 
   - name: "articles"
     label: "Articles"
