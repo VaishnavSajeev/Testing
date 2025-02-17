@@ -125,7 +125,7 @@ collections:
             name: "slider1"
             widget: "list"
             fields:
-              - { label: "Image", name: "Image", widget: "image" }
+              - { label: "Image", name: "imgSrc", widget: "image" }
               - { label: "Title", name: "name", widget: "string" }
 
   - name: "slider2"
@@ -139,7 +139,7 @@ collections:
             name: "slider2"
             widget: "list"
             fields:
-              - { label: "Image", name: "Image", widget: "image" }
+              - { label: "Image", name: "imgSrc", widget: "image" }
               - { label: "Title", name: "name", widget: "string" }
 
               #     { "imgSrc": "placeholder.png", "name": "Chris Wilson" },
@@ -155,9 +155,8 @@ collections:
             name: "familyvideo1"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Youtube Video Link", name: "url", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Video URL", name: "videoUrl", widget: "string" }
 
   - name: "familyvideo2"
     label: "Family Video 2"
@@ -170,24 +169,21 @@ collections:
             name: "familyvideo2"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Youtube Video Link", name: "url", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Video URL", name: "videoUrl", widget: "string" }
 
-  - name: "imagegallery"
+  - name: "images"
     label: "Image Gallery"
     files:
       - file: "data2/imagegallery.json"
         label: "Image Gallery"
-        name: "imagegallery"
+        name: "images"
         fields:
           - label: "Image Gallery"
-            name: "imagegallery"
+            name: "images"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Image URL", name: "imageUrl", widget: "string" }
+              - { label: "Image URL", name: "filename", widget: "image" }
 
   - name: "videogallery"
     label: "Video Gallery"
