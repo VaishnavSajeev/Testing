@@ -1,4 +1,4 @@
-const imageFolder = "image/"; // Folder path
+const imageFolder = ""; // Folder path
 let images = [];
 
 async function fetchAndMergeImageGallery() {
