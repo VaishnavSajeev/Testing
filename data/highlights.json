@@ -7,16 +7,16 @@
       "image": "image/highlight-novel.jpeg"
     },
     {
-      "id": 5,
-      "title": "Featured Article",
-      "description": "Explore the most beautiful places around the globe.",
-      "image": "image/highlight-article.jpeg"
-    },
-    {
       "id": 6,
       "title": "Upcoming Events",
       "description": "Cook up a storm with these mouthwatering recipes.",
       "image": "image/highlight-event.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Featured Article",
+      "description": "Explore the most beautiful places around the globe.",
+      "image": "image/highlight-article.jpeg"
     }
   ]
 }
