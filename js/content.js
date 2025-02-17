@@ -20,7 +20,7 @@ function renderContentList(contentList, containerId) {
     rowContainer.innerHTML += cardHTML;
   });
 }
-
+// testing
 async function fetchAllListsForDetails() {
   try {
     const [
@@ -30,6 +30,7 @@ async function fetchAllListsForDetails() {
       shortStoriesRes,
       traveloguesRes,
       articlesRes,
+      newsRes,
     ] = await Promise.all([
       fetch("data/highlights.json"),
       fetch("data/novels.json"),
@@ -37,6 +38,7 @@ async function fetchAllListsForDetails() {
       fetch("data/short-stories.json"),
       fetch("data/travelogues.json"),
       fetch("data/articles.json"),
+      fetch("data2/news2.json"),
     ]);
 
     // Convert responses to JSON
@@ -46,16 +48,17 @@ async function fetchAllListsForDetails() {
     const shortStoriesJSON = await shortStoriesRes.json();
     const traveloguesJSON = await traveloguesRes.json();
     const articlesJSON = await articlesRes.json();
+    const newsJSON = await newsRes.json();
 
     // Extract category-specific arrays from JSON structure
     const highlightsData = highlightsJSON["highlights"] || [];
     const novelsData = novelsJSON["novels"] || [];
     const childrensData = childrensJSON["childrens-writing"] || [];
-    console.log(childrensData);
 
     const shortStoriesData = shortStoriesJSON["short-stories"] || [];
     const traveloguesData = traveloguesJSON["travelogues"] || [];
     const articlesData = articlesJSON["articles"] || [];
+    const newsData = newsJSON["newsList"] || [];
 
     // Merge JSON data with existing lists
     highlightsList = [...highlightsData, ...highlightsList];
@@ -64,6 +67,7 @@ async function fetchAllListsForDetails() {
     shortStoriesList = [...shortStoriesData, ...shortStoriesList];
     traveloguesList = [...traveloguesData, ...traveloguesList];
     articlesList = [...articlesData, ...articlesList];
+    newsList = [...newsList, ...newsData];
 
     renderContentList(childrensWritingList, "childrens-writing");
     renderContentList(shortStoriesList, "short-stories");
