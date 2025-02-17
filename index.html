@@ -111,9 +111,6 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                </div>
-
-                <div class="card-body">
                   <a href="/contact.html" class="card-link orange-solid-text"
                     >About / Contact
                   </a>
@@ -126,6 +123,35 @@
 
       <section>
         <h3 class="hero-sub-title mt-5">Creative Writings</h3>
+        <li class="nav-item dropdown list-unstyled">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Creative Writings
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#novels">Novels</a></li>
+            <li>
+              <a class="dropdown-item" href="#childrens-writing"
+                >Children's Literature</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#short-stories">Short Stories</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#travelogues">Travelouges</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#articles">Articles</a>
+            </li>
+          </ul>
+        </li>
+
         <h1 class="text-center hero-sub-title mt-5">Novels</h1>
         <div id="novels" class="row d-flex justify-content-center"></div>
 
@@ -156,41 +182,43 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM loaded");
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM loaded");
 
-    if (window.netlifyIdentity) {
-      console.log("Netlify Identity loaded");
+        if (window.netlifyIdentity) {
+          console.log("Netlify Identity loaded");
 
-      window.netlifyIdentity.on("init", (user) => {
-        console.log("Netlify Identity initialized", user);
+          window.netlifyIdentity.on("init", (user) => {
+            console.log("Netlify Identity initialized", user);
 
-        // If no user, check for invite token
-        if (!user) {
-          const tokenMatch = window.location.hash.match(/invite_token=([^&]+)/);
-          if (tokenMatch) {
-            console.log("Invite token found:", tokenMatch[1]);
+            // If no user, check for invite token
+            if (!user) {
+              const tokenMatch =
+                window.location.hash.match(/invite_token=([^&]+)/);
+              if (tokenMatch) {
+                console.log("Invite token found:", tokenMatch[1]);
 
-            // Accept the invite
-            window.netlifyIdentity.acceptInvite(tokenMatch[1], true)
-              .then(() => {
-                console.log("Invite accepted!");
-                window.location.href = "/admin/";
-              })
-              .catch((err) => console.error("Invite acceptance failed:", err));
-          } else {
-            console.warn("No invite token found in URL");
-          }
+                // Accept the invite
+                window.netlifyIdentity
+                  .acceptInvite(tokenMatch[1], true)
+                  .then(() => {
+                    console.log("Invite accepted!");
+                    window.location.href = "/admin/";
+                  })
+                  .catch((err) =>
+                    console.error("Invite acceptance failed:", err)
+                  );
+              } else {
+                console.warn("No invite token found in URL");
+              }
+            }
+          });
+
+          window.netlifyIdentity.init();
+        } else {
+          console.error("Netlify Identity is NOT loaded!");
         }
       });
-
-      window.netlifyIdentity.init();
-    } else {
-      console.error("Netlify Identity is NOT loaded!");
-    }
-  });
-</script>
-
-
+    </script>
   </body>
 </html>
