@@ -106,4 +106,8 @@ body {
   body {
     padding: 0 32px;
   }
+   .hero-title {
+    font-size: 4rem;
+    margin-top: 24px;
+  }
 }
