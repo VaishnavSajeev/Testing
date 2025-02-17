@@ -1,34 +1,15 @@
 {
   "images": [
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "placeholder.png"
-    },
-    {
-      "filename": "/image/news-bg.jpg"
-    },
-    {
-      "filename": "/image/video-bg.jpg"
-    }
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/placeholder.png" },
+    { "filename": "/image/news-bg.jpg" }
   ]
 }
