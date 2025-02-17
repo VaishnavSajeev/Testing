@@ -16,6 +16,8 @@ let traveloguesList = [].reverse();
 // Articles list
 let articlesList = [].reverse();
 
+let newsList = [].reverse();
+
 async function fetchAndMergeHighlights() {
   try {
     const response = await fetch("data/highlights.json"); // Update with your JSON file path
@@ -105,6 +107,7 @@ async function fetchAllListsForDetails() {
       shortStoriesRes,
       traveloguesRes,
       articlesRes,
+      newsRes,
     ] = await Promise.all([
       fetch("data/highlights.json"),
       fetch("data/novels.json"),
@@ -112,6 +115,7 @@ async function fetchAllListsForDetails() {
       fetch("data/short-stories.json"),
       fetch("data/travelogues.json"),
       fetch("data/articles.json"),
+      fetch("data2/news2.json"),
     ]);
 
     // Convert responses to JSON
@@ -121,16 +125,17 @@ async function fetchAllListsForDetails() {
     const shortStoriesJSON = await shortStoriesRes.json();
     const traveloguesJSON = await traveloguesRes.json();
     const articlesJSON = await articlesRes.json();
+    const newsJSON = await newsRes.json();
 
     // Extract category-specific arrays from JSON structure
     const highlightsData = highlightsJSON["highlights"] || [];
     const novelsData = novelsJSON["novels"] || [];
     const childrensData = childrensJSON["childrens-writing"] || [];
-    console.log(childrensData);
 
     const shortStoriesData = shortStoriesJSON["short-stories"] || [];
     const traveloguesData = traveloguesJSON["travelogues"] || [];
     const articlesData = articlesJSON["articles"] || [];
+    const newsData = newsJSON["newsList"] || [];
 
     // Merge JSON data with existing lists
     highlightsList = [...highlightsData, ...highlightsList];
@@ -139,6 +144,7 @@ async function fetchAllListsForDetails() {
     shortStoriesList = [...shortStoriesData, ...shortStoriesList];
     traveloguesList = [...traveloguesData, ...traveloguesList];
     articlesList = [...articlesData, ...articlesList];
+    newsList = [...newsList, ...newsData];
 
     // After fetching and merging, display the details
     displayHighlightDetails();
@@ -158,6 +164,7 @@ function displayHighlightDetails() {
     childrensWritingList.find((item) => item.id === id) ||
     shortStoriesList.find((item) => item.id === id) ||
     traveloguesList.find((item) => item.id === id) ||
+    newsList.find((item) => item.id === id) ||
     articlesList.find((item) => item.id === id);
 
   if (item) {
