@@ -144,29 +144,29 @@ collections:
 
               #     { "imgSrc": "placeholder.png", "name": "Chris Wilson" },
 
-  - name: "youtubeVideo1"
+  - name: "youtubeVideos1"
     label: "Family Video VR Ajith"
     files:
       - file: "data2/familyvideo1.json"
         label: "Family Video VR Ajith"
-        name: "youtubeVideo1"
+        name: "youtubeVideos1"
         fields:
           - label: "Family Video 1"
-            name: "youtubeVideo1"
+            name: "youtubeVideos1"
             widget: "list"
             fields:
               - { label: "Youtube Video Link", name: "url", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
 
-  - name: "youtubeVideo2"
+  - name: "youtubeVideos2"
     label: "Family Video Jayasree"
     files:
       - file: "data2/familyvideo2.json"
         label: "Family Video Jayasree"
-        name: "youtubeVideo2"
+        name: "youtubeVideos2"
         fields:
           - label: "Family Video Jayasree"
-            name: "youtubeVideo2"
+            name: "youtubeVideos2"
             widget: "list"
             fields:
               - { label: "Youtube Video Link", name: "url", widget: "string" }
