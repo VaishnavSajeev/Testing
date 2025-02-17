@@ -18,8 +18,8 @@ async function fetchAndMergeProjectsAndNews() {
     ]);
 
     // Merge JSON data with existing lists
-    projectsList = [...projectsList, ...projectsJson];
-    newsList = [...newsList, ...newsJson];
+    projectsList = [...projectsList, ...projectsJson.projects];
+    newsList = [...newsList, ...newsJson.newsList];
 
     // Display updated content
     displayProjects();
@@ -83,8 +83,8 @@ async function fetchAllListsForPeopleDetails() {
     const newsJSON = await newsRes.json();
 
     // Merge JSON data with existing lists
-    projectsList = [...projectsJSON, ...projectsList];
-    newsList = [...newsJSON, ...newsList];
+    projectsList = [...projectsJSON.projects, ...projectsList];
+    newsList = [...newsJSON.newsList, ...newsList];
 
     // After fetching and merging, display the details
     displayPeopleDetails();
