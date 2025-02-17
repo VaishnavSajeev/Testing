@@ -1,304 +1,44 @@
-backend:
-  name: git-gateway
-  branch: main # Adjust if your main branch is named differently
-
-media_folder: "image" # Where images are stored in the repo
-public_folder: "/image" # Path to access images on the site
-
-collections:
-  - name: "highlights"
-    label: "Highlights"
-    files:
-      - file: "data/highlights.json"
-        label: "Highlights"
-        name: "highlights"
-        fields:
-          - label: "Highlights"
-            name: "highlights"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Href", name: "href", widget: "string" }
-
-  - name: "novels"
-    label: "Novels"
-    files:
-      - file: "data/novels.json"
-        label: "Novels"
-        name: "novels"
-        fields:
-          - label: "Novels"
-            name: "novels"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "projects"
-    label: "Projects"
-    files:
-      - file: "data2/projects.json"
-        label: "Projects"
-        name: "projects"
-        fields:
-          - label: "Projects"
-            name: "projects"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "news1"
-    label: "PFBS News "
-    files:
-      - file: "data2/news1.json"
-        label: "News 1"
-        name: "newsList"
-        fields:
-          - label: "News 1"
-            name: "newsList"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "news2"
-    label: "News & Updates"
-    files:
-      - file: "data2/news2.json"
-        label: "News 2"
-        name: "newsList"
-        fields:
-          - label: "News 2"
-            name: "newsList"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "slider1"
-    label: "Family Image VR Ajith"
-    files:
-      - file: "data2/familyimage1.json"
-        label: "Family Image VR Ajith"
-        name: "slider1"
-        fields:
-          - label: "Family Image 1"
-            name: "slider1"
-            widget: "list"
-            fields:
-              - { label: "Image", name: "imgSrc", widget: "image" }
-              - { label: "Title", name: "name", widget: "string" }
-
-  - name: "slider2"
-    label: "Family Image Jayasree"
-    files:
-      - file: "data2/familyimage2.json"
-        label: "Family Image 1"
-        name: "slider2"
-        fields:
-          - label: "Family Image 1"
-            name: "slider2"
-            widget: "list"
-            fields:
-              - { label: "Image", name: "imgSrc", widget: "image" }
-              - { label: "Title", name: "name", widget: "string" }
-
-              #     { "imgSrc": "placeholder.png", "name": "Chris Wilson" },
-
-  - name: "youtubeVideos1"
-    label: "Family Video VR Ajith"
-    files:
-      - file: "data2/familyvideo1.json"
-        label: "Family Video VR Ajith"
-        name: "youtubeVideos1"
-        fields:
-          - label: "Family Video 1"
-            name: "youtubeVideos1"
-            widget: "list"
-            fields:
-              - { label: "Youtube Video Link", name: "url", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-
-  - name: "youtubeVideos2"
-    label: "Family Video Jayasree"
-    files:
-      - file: "data2/familyvideo2.json"
-        label: "Family Video Jayasree"
-        name: "youtubeVideos2"
-        fields:
-          - label: "Family Video Jayasree"
-            name: "youtubeVideos2"
-            widget: "list"
-            fields:
-              - { label: "Youtube Video Link", name: "url", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-
-  - name: "images"
-    label: "Image Archive"
-    files:
-      - file: "data2/imagegallery.json"
-        label: "Image Gallery"
-        name: "images"
-        fields:
-          - label: "Image Gallery"
-            name: "images"
-            widget: "list"
-            fields:
-              - { label: "Image URL", name: "filename", widget: "image" }
-
-  - name: "youtubeVideos1"
-    label: "Video Archive"
-    files:
-      - file: "data2/videogallery.json"
-        label: "Video Gallery"
-        name: "youtubeVideos1"
-        fields:
-          - label: "Video Gallery"
-            name: "youtubeVideos1"
-            widget: "list"
-            fields:
-              - {
-                  label: "Youtbe Video URL Link",
-                  name: "url",
-                  widget: "string",
-                }
-              - { label: "Title", name: "title", widget: "string" }
-
-  - name: "articles"
-    label: "Articles"
-    files:
-      - file: "data/articles.json"
-        label: "Articles"
-        name: "articles"
-        fields:
-          - label: "Articles List"
-            name: "articles"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "short-stories"
-    label: "Short Stories"
-    files:
-      - file: "data/short-stories.json"
-        label: "Short Stories"
-        name: "short-stories"
-        fields:
-          - label: "Short Stories List"
-            name: "short-stories"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "travelogues"
-    label: "Travelogues"
-    files:
-      - file: "data/travelogues.json"
-        label: "Travelogues"
-        name: "travelogues"
-        fields:
-          - label: "Travelogues List"
-            name: "travelogues"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
-
-  - name: "childrens-writing"
-    label: "Children's Writing"
-    files:
-      - file: "data/childrens-writing.json"
-        label: "Children's Writing"
-        name: "childrens-writing"
-        fields:
-          - label: "Children's Writing List"
-            name: "childrens-writing"
-            widget: "list"
-            fields:
-              - { label: "ID", name: "id", widget: "number" }
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Short Description",
-                  name: "shortDescription",
-                  widget: "text",
-                }
-              - {
-                  label: "Long Description",
-                  name: "longDescription",
-                  widget: "text",
-                }
-              - { label: "Image", name: "image", widget: "image" }
+{
+  "youtubeVideos1": [
+    {
+      "url": "https://www.youtube.com/watch?v=SXpAOKY6g48",
+      "title": "Tile 1"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cCgn3H4UJr0",
+      "title": "Tile 2"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IkudDf-qRrY",
+      "title": "Tile 3"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xnWBZQ7wkb4",
+      "title": "Tile 4"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iy5SqM0bnqI",
+      "title": "Tile 5"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SXpAOKY6g48",
+      "title": "Tile 1"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cCgn3H4UJr0",
+      "title": "Tile 2"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IkudDf-qRrY",
+      "title": "Tile 3"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xnWBZQ7wkb4",
+      "title": "Tile 4"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iy5SqM0bnqI",
+      "title": "Tile 5"
+    }
+  ]
+}
