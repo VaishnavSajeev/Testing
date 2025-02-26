@@ -13,6 +13,13 @@
       "shortDescription": "A tropical paradise adventure.",
       "longDescription": "Immerse yourself in the vibrant culture and stunning landscapes of Bali.",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+    },
+    {
+      "id": 403,
+      "title": "Sample Travelouge Test",
+      "shortDescription": "Enter a small description here",
+      "longDescription": "Enter the detailed travelogue here",
+      "image": "/image/travelouge-sample-image.jpg"
     }
   ]
 }
