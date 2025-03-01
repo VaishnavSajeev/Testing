@@ -1,10 +1,24 @@
 {
   "slider2": [
-    { "imgSrc": "placeholder.png", "name": "Daniel Lee" },
-    { "imgSrc": "placeholder.png", "name": "Olivia Clark" },
-    { "imgSrc": "placeholder.png", "name": "Liam Martinez" },
-    { "imgSrc": "placeholder.png", "name": "Emma White" },
-    { "imgSrc": "placeholder.png", "name": "James Anderson" },
-    { "imgSrc": "placeholder.png", "name": "Ava Thomas" }
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #1"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #2"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #3"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #4"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #5"
+    }
   ]
 }
