@@ -1,10 +1,24 @@
 {
   "slider1": [
-    { "imgSrc": "placeholder.png", "name": "John Doe" },
-    { "imgSrc": "placeholder.png", "name": "Jane Smith" },
-    { "imgSrc": "placeholder.png", "name": "Mike Johnson" },
-    { "imgSrc": "placeholder.png", "name": "Emily Davis" },
-    { "imgSrc": "placeholder.png", "name": "Chris Wilson" },
-    { "imgSrc": "placeholder.png", "name": "Sophia Brown" }
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #1"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #2"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #3"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #4"
+    },
+    {
+      "imgSrc": "placeholder.png",
+      "name": "Photo #5"
+    }
   ]
 }
