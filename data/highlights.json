@@ -1,19 +1,19 @@
 {
   "highlights": [
     {
-      "id": 4,
+      "id": 1000,
       "title": "Latest Novel",
       "description": "ഇതു ഒരു പുസ്തകത്തിന്റെ വിവരണം.",
       "image": "image/highlight-novel.jpeg"
     },
     {
-      "id": 5,
+      "id": 1001,
       "title": "Featured Article",
       "description": "Explore the most beautiful places around the globe.",
       "image": "image/highlight-article.jpeg"
     },
     {
-      "id": 6,
+      "id": 1002,
       "title": "Upcoming Events",
       "description": "Cook up a storm with these mouthwatering recipes.",
       "image": "image/highlight-event.jpeg"
