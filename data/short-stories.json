@@ -1,14 +1,14 @@
 {
   "short-stories": [
     {
-      "id": 301,
+      "id": 3001,
       "title": "The Last Sunset",
       "shortDescription": "A story of love and loss.",
       "longDescription": "As the sun sets for the last time, memories of a beautiful life resurface.",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
     },
     {
-      "id": 302,
+      "id": 3002,
       "title": "Whispers in the Wind",
       "shortDescription": "A tale of hope and courage.",
       "longDescription": "In a small village, whispers in the wind carry messages of hope.",
