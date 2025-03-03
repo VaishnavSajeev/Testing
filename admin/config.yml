@@ -60,7 +60,16 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "Long Description",
+                  name: "longDescription",
+                  widget: "text",
+                }
               - { label: "Image", name: "image", widget: "image" }
 
   - name: "news1"
