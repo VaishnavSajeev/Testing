@@ -79,6 +79,14 @@ body {
   padding: 10px 0px 10px 10px;
   border-radius: 5px;
 }
+
+.title-blue {
+  color: #4169e1;
+}
+
+.title-pink {
+  color: #ff1493;
+}
 /*  */
 
 /* Family page */
