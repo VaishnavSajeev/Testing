@@ -106,7 +106,7 @@ function displayPeopleDetails() {
       <div class="card">
         <img src="${item.image}" class="card-img-top" alt="${item.title}">
         <div class="card-body">
-          <h1 class="card-title">${item.title}</h1>
+          <h1 class="card-title orange-solid-text">${item.title}</h1>
           <div class="card-text">${item.longDescription || item.description}</div>
         </div>
       </div>
