@@ -172,7 +172,7 @@ function displayHighlightDetails() {
       document.getElementById("highlight-details");
     const imagesetHtml = item.imageset
       ? `
-        <div class="image-gallery d-flex">
+        <div class="image-gallery">
           <img src="${item.imageset.image1}" class="gallery-img my-3 w-100" alt="Image 1">
           <img src="${item.imageset.image2}" class="gallery-img my-3 w-100" alt="Image 2">
           <img src="${item.imageset.image3}" class="gallery-img my-3 w-100" alt="Image 3">
