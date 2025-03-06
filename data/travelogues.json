@@ -7,11 +7,11 @@
       "longDescription": "Experience the beauty and serenity of the majestic Alps.",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
       "imageSet": {
-        "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
+        "image1": "image/placeholder.png",
+        "image2": "image/placeholder.png",
+        "image3": "image/placeholder.png",
+        "image4": "image/placeholder.png",
+        "image5": "image/placeholder.png"
       }
     },
     {
