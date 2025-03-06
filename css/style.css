@@ -88,6 +88,8 @@ body {
 .title-pink {
   color: #ff1493;
   margin: 12px 0px;
+  text-decoration: underline;
+
 }
 /*  */
 
