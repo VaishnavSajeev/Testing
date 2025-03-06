@@ -170,6 +170,17 @@ function displayHighlightDetails() {
   if (item) {
     const highlightDetailsContainer =
       document.getElementById("highlight-details");
+    const imagesetHtml = item.imageset
+      ? `
+        <div class="image-gallery">
+          <img src="${item.imageset.image1}" class="gallery-img" alt="Image 1">
+          <img src="${item.imageset.image2}" class="gallery-img" alt="Image 2">
+          <img src="${item.imageset.image3}" class="gallery-img" alt="Image 3">
+          <img src="${item.imageset.image4}" class="gallery-img" alt="Image 4">
+          <img src="${item.imageset.image5}" class="gallery-img" alt="Image 5">
+        </div>
+      `
+      : "";
     highlightDetailsContainer.innerHTML = `
       <div class="col-md-8 w-100 p-0">
         <div class="card">
@@ -177,6 +188,7 @@ function displayHighlightDetails() {
           <div class="card-body">
             <h1 class="card-title orange-solid-text">${item.title}</h1>
             <div class="card-text">${item.longDescription || item.description}</div>
+            <div>${imagesetHtml}</div>
           </div>
         </div>
       </div>
