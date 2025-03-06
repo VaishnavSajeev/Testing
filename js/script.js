@@ -176,7 +176,7 @@ function displayHighlightDetails() {
           <img src="${item.image}" class="card-img-top" alt="${item.title}">
           <div class="card-body">
             <h1 class="card-title">${item.title}</h1>
-            <p class="card-text">${item.longDescription || item.description}</p>
+            <div class="card-text">${item.longDescription || item.description}</div>
           </div>
         </div>
       </div>
