@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Pen and Paths</h1>
+      <nav class="navbar navbar-expand-lg text-uppercase">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 nav-fill">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Creative Writings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#novels">Novels</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#childrens-writing"
+                      >Children's Literature</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#short-stories"
+                      >Short Stories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#travelogues">Travelouges</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#articles">Articles</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/people.html"
+                  >People for Better Society</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/family.html">Family Tree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/photo.html">Photo Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/video.html">Video Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/news.html">News and Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow-sm p-4 mb-4">
+            <h2 class="text-center mb-4">Wrap and Copy Subtitle</h2>
+            <div class="mb-3">
+              <label for="subtitleInput" class="form-label fs-3"
+                >Enter Subtitle</label
+              >
+              <input
+                type="text"
+                id="subtitleInput"
+                class="form-control"
+                placeholder="Enter subtitle..."
+              />
+            </div>
+            <div class="d-flex justify-content-between">
+              <button onclick="wrapSubtitle()" class="btn btn-primary">
+                Wrap Subtitle
+              </button>
+              <button onclick="copyOutput()" class="btn btn-success">
+                Copy Output
+              </button>
+            </div>
+            <div id="output" class="mt-4 text-center text-success"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function wrapSubtitle() {
+        const input = document.getElementById("subtitleInput").value;
+        if (input.trim() !== "") {
+          // Wrap the input text inside a single <h2> tag
+          const wrappedText = `<h2 class="title-pink">${input}</h2>`;
+          document.getElementById("output").innerHTML = wrappedText;
+        }
+      }
+
+      function copyOutput() {
+        const outputText = document.getElementById("output").innerText; // Get the displayed plain text
+        if (outputText.trim() !== "") {
+          const htmlToCopy = `<h2 class="title-pink">${outputText}</h2>`; // Rebuild the HTML format to copy
+          navigator.clipboard
+            .writeText(htmlToCopy) // Copy the desired HTML format
+            .then(() => {
+              alert("Copied to clipboard!");
+            })
+            .catch((err) => {
+              alert("Failed to copy text");
+            });
+        }
+      }
+    </script>
+  </body>
+</html>
