@@ -8,7 +8,7 @@ function renderContentList(contentList, containerId) {
   contentList.forEach((content) => {
     const cardHTML = `
         <div class="col-md-4 mb-4">
-          <div class="card h-100 ratio ratio-1x1" onclick="location.href='details.html?id=${content.id}'" style="cursor: pointer;">
+          <div class="card h-100" onclick="location.href='details.html?id=${content.id}'" style="cursor: pointer;">
             <img src="${content.image}" class="card-img-top" alt="${content.title}">
             <div class="card-body">
               <h5 class="card-title">${content.title}</h5>
