@@ -88,7 +88,9 @@ function renderNovels() {
     const cardHTML = `
       <div class="col-md-4 mb-4">
         <div class="card h-100" onclick="location.href='details.html?id=${novel.id}'" style="cursor: pointer;">
-          <img src="${novel.image}" class="card-img-top" alt="${novel.title}">
+        <div class="ratio ratio-16x9">
+          <img src="${novel.image}" class="card-img-top img-fluid" alt="${novel.title}">
+          </div>
           <div class="card-body">
             <h5 class="card-title">${novel.title}</h5>
             <p class="card-text">${novel.shortDescription}</p>
