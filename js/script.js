@@ -44,7 +44,9 @@ function renderHighlights() {
     const cardHTML = `
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <img src="${highlight.image}" class="card-img-top" alt="${highlight.title}">
+          <div class="ratio ratio-16x9">
+          <img src="${highlight.image}" class="card-img-top img-fluid" alt="${highlight.title}">
+          </div>
           <div class="card-body">
             <h5 class="card-title">
               <a href="details.html?id=${highlight.id}" class="orange-solid-text">${highlight.title}</a>
