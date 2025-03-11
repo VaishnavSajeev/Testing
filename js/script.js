@@ -44,7 +44,7 @@ function renderHighlights() {
     const cardHTML = `
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <div class="ratio ratio-16x9">
+          <div class="ratio ratio-4x3">
           <img src="${highlight.image}" class="card-img-top img-fluid" alt="${highlight.title}">
           </div>
           <div class="card-body">
@@ -88,11 +88,11 @@ function renderNovels() {
     const cardHTML = `
       <div class="col-md-4 mb-4">
         <div class="card h-100" onclick="location.href='details.html?id=${novel.id}'" style="cursor: pointer;">
-        <div class="ratio ratio-16x9">
+        <div class="ratio ratio-4x3">
           <img src="${novel.image}" class="card-img-top img-fluid" alt="${novel.title}">
           </div>
           <div class="card-body">
-            <h5 class="card-title">${novel.title}</h5>
+            <h5 class="card-title title-blue-small">${novel.title}</h5>
             <p class="card-text">${novel.shortDescription}</p>
           </div>
         </div>
