@@ -85,6 +85,10 @@ body {
   font-size: 3rem;
 }
 
+.title-blue-small {
+  color: #4169e1;
+  font-size: 2rem;
+}
 .title-pink {
   color: #ff1493;
   margin: 12px 0px;
