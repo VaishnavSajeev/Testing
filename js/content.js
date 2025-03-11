@@ -13,7 +13,7 @@ function renderContentList(contentList, containerId) {
               <img src="${content.image}" class="card-img-top img-fluid" alt="${content.title}">
              </div>
             <div class="card-body">
-              <h5 class="card-title title-pink">${content.title}</h5>
+              <h5 class="card-title title-blue-small">${content.title}</h5>
               <p class="card-text">${content.shortDescription}</p>
             </div>
           </div>
