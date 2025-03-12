@@ -37,7 +37,9 @@ function displayProjects() {
       (project) => `
     <div class="col-md-4 mb-4">
       <div class="card">
+        <div class="ratio ratio-4x3">
         <img src="${project.image}" class="card-img-top" alt="${project.title}">
+        </div>
         <div class="card-body">
           <h5 class="card-title">${project.title}</h5>
           <p class="card-text">${project.shortDescription}</p>
@@ -58,7 +60,9 @@ function displayNews() {
       (news) => `
     <div class="col-md-4 mb-4">
       <div class="card">
+        <div class="ratio ratio-4x3">
         <img src="${news.image}" class="card-img-top" alt="${news.title}">
+        </div>
         <div class="card-body">
           <h5 class="card-title">${news.title}</h5>
           <p class="card-text">${news.shortDescription}</p>
