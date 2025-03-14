@@ -8,10 +8,7 @@
       "image": "image/placeholder.png",
       "imageset": {
         "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
+        "image2": "/image/placeholder.png"
       }
     },
     {
@@ -22,10 +19,7 @@
       "image": "image/placeholder.png",
       "imageset": {
         "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
+        "image2": "/image/placeholder.png"
       }
     },
     {
@@ -36,10 +30,7 @@
       "image": "/image/download.jpg",
       "imageset": {
         "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
+        "image2": "/image/placeholder.png"
       }
     },
     {
@@ -50,10 +41,7 @@
       "image": "/image/copy-of-lr-to-pm-1.jpg",
       "imageset": {
         "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
+        "image2": "/image/placeholder.png"
       }
     }
   ]
