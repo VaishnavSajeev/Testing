@@ -1,48 +1,6 @@
 {
   "travelogues": [
     {
-      "id": 4001,
-      "title": "Journey Through the Alps",
-      "shortDescription": "A breathtaking travel experience.",
-      "longDescription": "Experience the beauty and serenity of the majestic Alps.",
-      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-      "imageSet": {
-        "image1": "image/placeholder.png",
-        "image2": "image/placeholder.png",
-        "image3": "image/placeholder.png",
-        "image4": "image/placeholder.png",
-        "image5": "image/placeholder.png"
-      },
-      "imageset": {
-        "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
-      }
-    },
-    {
-      "id": 4003,
-      "title": "Sample Travelouge Test",
-      "shortDescription": "Enter a small description here",
-      "longDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis corrupti aspernatur ea rerum dolor odit sit adipisci saepe odio, facilis sequi enim, quia impedit quaerat corporis atque quas? Ducimus facilis tempore officia itaque rem eos quia voluptatem, inventore voluptatibus distinctio! Iusto molestiae modi exercitationem illo assumenda. Temporibus id earum doloribus blanditiis exercitationem voluptatibus aut sit quia vel unde amet sapiente, vero quisquam autem molestias eos at repudiandae cumque illum! Quam soluta sed eligendi quisquam. \n\n</br>\n</br>\nQuibusdam dolorem, vitae reprehenderit officia id culpa? Alias et, explicabo commodi quos impedit nulla consequatur corporis a perferendis nemo odio praesentium harum quam ad maxime dolore enim aliquid. Aliquid, ea suscipit aperiam molestiae corporis omnis. Aliquid vel inventore ratione eius itaque delectus dicta eos vero eveniet, provident ullam tempora! Vitae minima eligendi voluptatum. Doloremque adipisci consectetur, quae non recusandae, totam aliquam ipsum, laudantium iure necessitatibus blanditiis? Pariatur ratione explicabo quasi non autem modi ea quia adipisci! Ab, sequi, dignissimos officiis atque excepturi minus libero \n\n\n<h2 class=\"title-pink\"> SUB TITLE </h2>\n\n\nnumquam dolorum obcaecati ullam necessitatibus, laborum quas sunt fuga doloremque ducimus assumenda aspernatur? Suscipit consequuntur rerum ratione aliquam deserunt. Quos quam, error culpa soluta quasi consequatur rerum non, perferendis ullam ipsam vitae ipsa? Alias est architecto quaerat! Porro architecto quasi distinctio fugiat, eveniet quas ad libero corrupti, facilis quo quibusdam hic consectetur vitae beatae, pariatur ipsa maxime ex quidem dolore aspernatur nam earum commodi. Obcaecati, animi velit sequi autem architecto dolor excepturi illum sapiente sed alias reiciendis eius unde nemo cum officia quod dolore molestias accusantium harum aliquid aperiam nesciunt.  </br></br>\n\n<h2 class=\"title-pink\">ഇതു ഒരു പുസ്തകത്തിന്റെ വിവരണം</h2>\n\n  Nobis nemo veniam cum dolor sit, libero hic maiores nesciunt corporis amet explicabo ipsum laborum. Officiis facilis eveniet nisi quibusdam! Sed porro consequatur fugit dicta mollitia laborum tempore excepturi culpa deleniti, qui eum asperiores cum optio maiores hic. Et aspernatur officia quae debitis aperiam in, repellendus velit veritatis earum voluptatem expedita adipisci id saepe eius atque eaque porro, magni nemo laborum. Fugiat optio libero rerum, deleniti eaque aliquam expedita molestiae, autem possimus dolorum perspiciatis non quod maiores ipsum iure consequatur atque cumque vero a quo, minima dolorem hic dolor. Doloribus deserunt, ab ratione ex velit impedit in dolor praesentium magnam? Iusto excepturi ipsam eaque, commodi et corrupti facere magnam earum animi consectetur aliquam odit esse necessitatibus eveniet illum optio officia ex dolorum, quod sunt unde officiis. Fuga consectetur voluptatum alias perferendis ipsam, et odit sed quibusdam hic eaque suscipit error obcaecati illo aspernatur voluptatem dolore ratione dolor nobis iure ullam placeat explicabo quaerat debitis! Suscipit, numquam nulla dolor saepe ducimus illo sit. Neque atque autem animi hic, ipsam impedit voluptatibus, totam incidunt placeat unde maiores voluptas ut! Perspiciatis ipsum alias ut nostrum nobis at cumque omnis illum quasi sint voluptatibus, blanditiis explicabo placeat rerum ab pariatur dolor, numquam repudiandae minima iure exercitationem. Laboriosam expedita quo quas dignissimos reiciendis eveniet veniam, neque amet dolor possimus placeat iste doloremque! Minima laboriosam eligendi ex sapiente commodi animi officia nihil mollitia, magni autem soluta tempore odit quae. Magnam nobis ipsum, ratione ducimus quae doloribus iusto vero ad recusandae assumenda et, debitis doloremque deserunt voluptates pariatur. Incidunt.",
-      "image": "/image/travelouge-sample-image.jpg",
-      "imageSet": {
-        "image1": "/image/placeholder.png",
-        "image2": "/image/placeholder.png",
-        "image3": "/image/placeholder.png",
-        "image4": "/image/placeholder.png",
-        "image5": "/image/placeholder.png"
-      },
-      "imageset": {
-        "image1": "/image/newfamilybg.jpg",
-        "image2": "/image/highlight-article.jpeg",
-        "image3": "/image/news-bg.jpg",
-        "image4": "/image/travelouge-sample-image.jpg",
-        "image5": "/image/highlight-novel.jpeg"
-      }
-    },
-    {
       "id": 4004,
       "title": "Trip to  Tripura  2024 December 11-14 ",
       "shortDescription": "I traveled to Tripura from December 11-14, 2024, with Vishnu Chandran. Our host was Saju Vaheed, IAS, District Collector of Dhalai district, originally from Nedumangad, Thiruvananthapuram. It was a truly mesmerizing trip, one to be cherished for years to come.",
