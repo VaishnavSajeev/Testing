@@ -106,12 +106,24 @@ function displayPeopleDetails() {
     newsList.find((news) => news.id === id);
 
   if (item) {
+     const imagesetHtml = item.imageset
+      ? `
+        <div class="image-gallery">
+          <img src="${item.imageset.image1}" class="gallery-img my-3 w-100" alt="Image 1">
+          <img src="${item.imageset.image2}" class="gallery-img my-3 w-100" alt="Image 2">
+          <img src="${item.imageset.image3}" class="gallery-img my-3 w-100" alt="Image 3">
+          <img src="${item.imageset.image4}" class="gallery-img my-3 w-100" alt="Image 4">
+          <img src="${item.imageset.image5}" class="gallery-img my-3 w-100" alt="Image 5">
+        </div>
+      `
+      : "";
     document.getElementById("people-details").innerHTML = `
       <div class="card">
         <img src="${item.image}" class="card-img-top" alt="${item.title}">
         <div class="card-body">
           <h1 class="card-title orange-solid-text">${item.title}</h1>
           <div class="card-text">${item.longDescription || item.description}</div>
+          <div>${imagesetHtml}</div>
         </div>
       </div>
     `;
