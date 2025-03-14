@@ -111,9 +111,6 @@ function displayPeopleDetails() {
         <div class="image-gallery">
           <img src="${item.imageset.image1}" class="gallery-img my-3 w-100" alt="Image 1">
           <img src="${item.imageset.image2}" class="gallery-img my-3 w-100" alt="Image 2">
-          <img src="${item.imageset.image3}" class="gallery-img my-3 w-100" alt="Image 3">
-          <img src="${item.imageset.image4}" class="gallery-img my-3 w-100" alt="Image 4">
-          <img src="${item.imageset.image5}" class="gallery-img my-3 w-100" alt="Image 5">
         </div>
       `
       : "";
