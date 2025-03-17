@@ -49,7 +49,7 @@ function renderHighlights() {
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="details.html?id=${highlight.id}" class="orange-solid-text">${highlight.title}</a>
+              <a href="${highlight.link}" class="orange-solid-text">${highlight.title}</a>
             </h5>
             <p class="card-text truncate">${highlight.description}</p>
           </div>
