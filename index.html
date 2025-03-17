@@ -188,40 +188,40 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        console.log("DOM loaded");
+        // console.log("DOM loaded");
 
         if (window.netlifyIdentity) {
           console.log("Netlify Identity loaded");
 
           window.netlifyIdentity.on("init", (user) => {
-            console.log("Netlify Identity initialized", user);
+            // console.log("Netlify Identity initialized", user);
 
             // If no user, check for invite token
             if (!user) {
               const tokenMatch =
                 window.location.hash.match(/invite_token=([^&]+)/);
               if (tokenMatch) {
-                console.log("Invite token found:", tokenMatch[1]);
+                // console.log("Invite token found:", tokenMatch[1]);
 
                 // Accept the invite
                 window.netlifyIdentity
                   .acceptInvite(tokenMatch[1], true)
                   .then(() => {
-                    console.log("Invite accepted!");
+                    // console.log("Invite accepted!");
                     window.location.href = "/admin/";
                   })
                   .catch((err) =>
-                    console.error("Invite acceptance failed:", err)
+                    // console.error("Invite acceptance failed:", err)
                   );
               } else {
-                console.warn("No invite token found in URL");
+                // console.warn("No invite token found in URL");
               }
             }
           });
 
           window.netlifyIdentity.init();
         } else {
-          console.error("Netlify Identity is NOT loaded!");
+          // console.error("Netlify Identity is NOT loaded!");
         }
       });
     </script>
