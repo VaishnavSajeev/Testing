@@ -27,7 +27,7 @@ async function fetchAndMergeHighlights() {
     const { highlights } = await response.json();
 
     // Merge the two lists
-    highlightsList = [...highlights, ...highlightsList].reverse();
+    highlightsList = [...highlights, ...highlightsList];
 
     // Render the updated highlights list
     renderHighlights();
