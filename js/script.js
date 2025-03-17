@@ -86,7 +86,7 @@ function renderNovels() {
 
   novelsList.forEach((novel) => {
     const cardHTML = `
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 p-0 px-sm-2">
         <div class="card h-100" onclick="location.href='details.html?id=${novel.id}'" style="cursor: pointer;">
         <div class="ratio ratio-4x3">
           <img src="${novel.image}" class="card-img-top img-fluid" alt="${novel.title}">
