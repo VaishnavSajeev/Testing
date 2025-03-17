@@ -8,7 +8,7 @@ async function fetchAndMergeImageGallery() {
 
     // Merge JSON data with existing image list
     images = [...images, ...imageGalleryJson.images];
-    console.log(images);
+    // console.log(images);
 
     const swiperWrapper = document.getElementById("swiperWrapper1");
 
