@@ -2,16 +2,9 @@
   "projects": [
     {
       "id": 6001,
-      "title": "Green Earth Initiative",
-      "shortDescription": "An environmental sustainability project.",
-      "longDescription": "A global effort to promote sustainable practices and reduce carbon footprints.",
-      "image": "image/placeholder.png"
-    },
-    {
-      "id": 6002,
-      "title": "Tech for Education",
-      "shortDescription": "Bringing technology to classrooms.",
-      "longDescription": "A project focused on providing digital resources to underprivileged schools worldwide.",
+      "title": "Coming Soon: Building a Better Tomorrow",
+      "shortDescription": "Empowering communities through impactful projects and initiatives. Stay tuned for our upcoming efforts to create positive change.",
+      "longDescription": "At People for Better Society, we believe in making a difference. Our Projects & Initiatives section will soon showcase meaningful programs focused on education, healthcare, environmental sustainability, and social empowerment. Through collective efforts and innovative solutions, we aim to create a lasting impact and uplift communities in need. Stay tuned to learn more about our upcoming initiatives and how you can be a part of this journey toward a better future.",
       "image": "image/placeholder.png"
     }
   ]
