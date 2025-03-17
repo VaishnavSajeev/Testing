@@ -2,17 +2,17 @@
   "highlights": [
     {
       "id": 1,
-      "title": "Featured Article",
-      "link": "https://gregarious-toffee-1b8e99.netlify.app/details.html?id=5004",
-      "description": "Is Lok Sabha constituency re-delimitation necessary?",
-      "image": "/image/download-4-.jpeg"
-    },
-    {
-      "id": 2,
       "title": "Featured Travelouge",
       "link": "https://gregarious-toffee-1b8e99.netlify.app/details.html?id=4010",
       "description": "Bhutan - The Beauty Hidden by the Himalayas (Part 6)",
       "image": "/image/with-dochula-eco-resort-staff.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Featured Article",
+      "link": "https://gregarious-toffee-1b8e99.netlify.app/details.html?id=5004",
+      "description": "Is Lok Sabha constituency re-delimitation necessary?",
+      "image": "/image/download-4-.jpeg"
     },
     {
       "id": 3,
