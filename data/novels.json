@@ -2,31 +2,10 @@
   "novels": [
     {
       "id": 1001,
-      "title": "The Silent Witness",
-      "shortDescription": "A thrilling mystery novel.",
-      "longDescription": "Follow detective Jane as she unravels a web of deceit and crime in a sleepy town.",
+      "title": "Coming Soon: A New Story Unfolds",
+      "shortDescription": "An exciting new novel is on its way! Stay tuned for a thrilling journey filled with adventure, mystery, and unforgettable characters.",
+      "longDescription": "Our collection of novels is about to grow! A brand-new story is in the works, promising an immersive experience that will captivate your imagination. Whether you love heart-pounding adventures, deep emotional narratives, or mind-bending mysteries, this upcoming novel will have something for everyone. Keep an eye on this space for updates. The story begins soon—don't miss it!",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-    },
-    {
-      "id": 1002,
-      "title": "Into the Wild",
-      "shortDescription": "An adventure in the untamed wilderness.",
-      "longDescription": "Embark on an unforgettable journey through wild terrains and perilous adventures.",
-      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-    },
-    {
-      "id": 1003,
-      "title": "A Tale of Two Hearts",
-      "shortDescription": "A heartwarming romance.",
-      "longDescription": "Two strangers meet under unexpected circumstances, finding love along the way.",
-      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-    },
-    {
-      "id": 1004,
-      "title": "test novel",
-      "shortDescription": "this is test novel",
-      "longDescription": "dsdsdssdsddssd",
-      "image": "/image/news-bg.jpg"
     }
   ]
 }
