@@ -2,10 +2,10 @@
   "highlights": [
     {
       "id": 1,
-      "title": "Latest Novel",
-      "link": "/",
-      "description": "ഇതു ഒരു പുസ്തകത്തിന്റെ വിവരണം.",
-      "image": "image/highlight-novel.jpeg"
+      "title": "Featured Article",
+      "link": "https://gregarious-toffee-1b8e99.netlify.app/details.html?id=5004",
+      "description": "Is Lok Sabha constituency re-delimitation necessary?",
+      "image": "/image/download-4-.jpeg"
     },
     {
       "id": 2,
