@@ -2,24 +2,10 @@
   "childrens-writing": [
     {
       "id": 2001,
-      "title": "The Magical Forest",
-      "shortDescription": "An enchanting adventure in a mystical forest.",
-      "longDescription": "Follow young Ellie as she discovers a hidden world filled with magic and wonder.",
+      "title": "Coming Soon: Stories for Young Explorers!",
+      "shortDescription": "A world of fun, adventure, and imagination awaits! Exciting children's stories are on the way—stay tuned!",
+      "longDescription": "My Children’s Writings are coming soon! Get ready for a collection of delightful tales crafted especially for young readers. From magical adventures to heartwarming bedtime stories, these writings will spark imagination and bring smiles to little faces. Whether it’s a journey through enchanted lands or a story about friendship and fun, there will be something special for every child to enjoy. Stay tuned for the launch of this wonderful storytelling space!",
       "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-    },
-    {
-      "id": 2002,
-      "title": "The Talking Cat",
-      "shortDescription": "A delightful story of a talking cat.",
-      "longDescription": "Max the cat helps his young owner solve mysteries in their town.",
-      "image": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-    },
-    {
-      "id": 2003,
-      "title": "testing custom",
-      "shortDescription": "text text text",
-      "longDescription": "<h2 class=\"title-pink text-decoration-underline\">Subtile 1</h2>\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero accusantium voluptatibus esse non magni deserunt temporibus? Quae neque at quibusdam corporis id quis cumque animi illum officiis vero blanditiis qui totam rem, et magni nulla molestiae harum itaque veritatis modi mollitia. Aspernatur eligendi unde placeat a omnis qui consequuntur recusandae velit maxime incidunt nihil nemo excepturi, quo repudiandae magnam obcaecati aliquam? Similique iusto ut cum reiciendis, eveniet voluptatem fugit porro, quaerat, dolorum pariatur perferendis saepe est suscipit laboriosam sapiente?</p>\n<br>\n<h2 class=\"title-pink text-decoration-underline\">Subtitle 2</h2>\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero accusantium voluptatibus esse non magni deserunt temporibus? Quae neque at quibusdam corporis id quis cumque animi illum officiis vero blanditiis qui totam rem, et magni nulla molestiae harum itaque veritatis modi mollitia. Aspernatur eligendi unde placeat a omnis qui consequuntur recusandae velit maxime incidunt nihil nemo excepturi, quo repudiandae magnam obcaecati aliquam? Similique iusto ut cum reiciendis, eveniet voluptatem fugit porro, quaerat, dolorum pariatur perferendis saepe est suscipit laboriosam sapiente?</p>\n<br>\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero accusantium voluptatibus esse non magni deserunt temporibus? Quae neque at quibusdam corporis id quis cumque animi illum officiis vero blanditiis qui totam rem, et magni nulla molestiae harum itaque veritatis modi mollitia. Aspernatur eligendi unde placeat a omnis qui consequuntur recusandae velit maxime incidunt nihil nemo excepturi, quo repudiandae magnam obcaecati aliquam? Similique iusto ut cum reiciendis, eveniet voluptatem fugit porro, quaerat, dolorum pariatur perferendis saepe est suscipit laboriosam sapiente?</p>\n<br>\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero accusantium voluptatibus esse non magni deserunt temporibus? Quae neque at quibusdam corporis id quis cumque animi illum officiis vero blanditiis qui totam rem, et magni nulla molestiae harum itaque veritatis modi mollitia. Aspernatur eligendi unde placeat a omnis qui consequuntur recusandae velit maxime incidunt nihil nemo excepturi, quo repudiandae magnam obcaecati aliquam? Similique iusto ut cum reiciendis, eveniet voluptatem fugit porro, quaerat, dolorum pariatur perferendis saepe est suscipit laboriosam sapiente?</p>\n<br>",
-      "image": "/image/highlight-event.jpeg"
     }
   ]
 }
