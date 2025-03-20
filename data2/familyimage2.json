@@ -1,23 +1,23 @@
 {
   "slider2": [
     {
-      "imgSrc": "placeholder.png",
+      "imgSrc": "/image/placeholder.png",
       "name": "Photo #1"
     },
     {
-      "imgSrc": "placeholder.png",
+      "imgSrc": "/image/placeholder.png",
       "name": "Photo #2"
     },
     {
-      "imgSrc": "placeholder.png",
+      "imgSrc": "/image/placeholder.png",
       "name": "Photo #3"
     },
     {
-      "imgSrc": "placeholder.png",
+      "imgSrc": "/image/placeholder.png",
       "name": "Photo #4"
     },
     {
-      "imgSrc": "placeholder.png",
+      "imgSrc": "/image/placeholder.png",
       "name": "Photo #5"
     }
   ]
