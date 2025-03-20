@@ -42,7 +42,7 @@ function generateSlides(sliderData, containerId) {
     .map(
       (item) => `
       <div class="swiper-slide">
-          <img src="image/${item.imgSrc}" alt="${item.name}">
+          <img src="${item.imgSrc}" alt="${item.name}">
           <h6 class="pb-3">${item.name}</h6>
       </div>
   `
