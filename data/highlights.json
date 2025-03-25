@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title": "Featured Travelogue",
-      "link": "https://thepenandpaper.netlify.app/details.html?id=4010",
+      "link": "https://penandpaths.netlify.app/details.html?id=4010",
       "description": "Bhutan - The Beauty Hidden by the Himalayas (Part 6)",
       "image": "/image/with-dochula-eco-resort-staff.jpg"
     },
     {
       "id": 2,
       "title": "Featured Article",
-      "link": "https://thepenandpaper.netlify.app/details.html?id=5001",
+      "link": "https://penandpaths.netlify.app/details.html?id=5001",
       "description": "Is Lok Sabha constituency re-delimitation necessary?",
       "image": "/image/download-4-.jpeg"
     }
