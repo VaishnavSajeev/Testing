@@ -1,20 +1,43 @@
 //
 
-function renderContentList(contentList, containerId) {
+function renderContentList(
+  contentList,
+  containerId,
+  CategoryNameStyle,
+  CategoryName
+) {
   const container = document.getElementById(containerId);
   container.innerHTML = '<div class="row"></div>';
   const rowContainer = container.querySelector(".row");
 
   contentList.forEach((content) => {
     const cardHTML = `
-        <div class="col-md-4 mb-4 p-0 px-sm-2">
-          <div class="card h-100" onclick="location.href='details.html?id=${content.id}'" style="cursor: pointer;">
-             <div class="ratio ratio-4x3">
-              <img src="${content.image}" class="card-img-top img-fluid" alt="${content.title}">
+        <div class="col-md-6 col-lg-4 mb-4 p-0 px-sm-2 ">
+          <div class="card h-100 bg-transparent border-0" onclick="location.href='details.html?id=${
+            content.id
+          }'" style="cursor: pointer;">
+             <div class="ratio ratio-4x3 ">
+              <img src="${
+                content.image
+              }" class="card-img-top img-fluid rounded-3" alt="${
+      content.title
+    }">
              </div>
             <div class="card-body">
-              <h5 class="card-title title-blue-small">${content.title}</h5>
-              <p class="card-text">${content.shortDescription}</p>
+              <h5 class="card-title title-blue-small ${CategoryNameStyle} color-none">${
+      content.title
+    }</h5>
+              <p class="card-text text-secondary">${
+                content.shortDescription.slice(0, 80) + "..."
+              }</p>
+              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-3">
+                <img src="image/portrait_ajith.jpg" class="rounded-circle" width="40px" alt="">
+                <p class="m-0 text-secondary ">V.R. Ajith Kumar</p>
+              </div>
+                <p class="card-category ${CategoryNameStyle} ">${CategoryName}</p>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -71,10 +94,25 @@ async function fetchAllListsForDetails() {
     articlesList = [...articlesData, ...articlesList];
     newsList = [...newsList, ...newsData];
 
-    renderContentList(childrensWritingList, "childrens-writing");
-    renderContentList(shortStoriesList, "short-stories");
-    renderContentList(traveloguesList, "travelogues");
-    renderContentList(articlesList, "articles");
+    renderContentList(
+      childrensWritingList,
+      "childrens-writing",
+      "childrensWritingColor",
+      "Children's Writing"
+    );
+    renderContentList(
+      shortStoriesList,
+      "short-stories",
+      "shortStoriesColor",
+      "Short Story"
+    );
+    renderContentList(
+      traveloguesList,
+      "travelogues",
+      "travelogueColor",
+      "Travelogue"
+    );
+    renderContentList(articlesList, "articles", "articleColor", "Article");
 
     // After fetching and merging, display the details
   } catch (error) {

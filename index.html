@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover the works of V.R. Ajith Kumar —travelogues, articles, short stories, children's writings, novels & the 'People for Better Society' trust." />
+    <meta
+      name="description"
+      content="Discover the works of V.R. Ajith Kumar —travelogues, articles, short stories, children's writings, novels & the 'People for Better Society' trust."
+    />
     <meta name="robots" content="index, follow" />
     <title>The Pen And Paths</title>
     <link
@@ -13,10 +16,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="image/favicon-logo.jpg" type="image/jpeg">
+    <link rel="icon" href="image/favicon-logo.jpg" type="image/jpeg" />
   </head>
   <body>
-    <header>
+    <header id="home-header">
       <h1 class="hero-title">The Pen and Paths</h1>
       <nav class="navbar navbar-expand-lg text-uppercase">
         <div class="container-fluid">
@@ -95,27 +98,41 @@
         <div class="hero-main container-flud">
           <div class="row">
             <div class="col-lg-9 col-md-12">
-              <h3 class="my-4 hero-sub-title">Highlights</h3>
-              <div class="row" id="highlights"></div>
-              <h6 class="text-center">
+              <!-- <div class="d-flex flex-column align-items-start">
+                <h2 class="highlightHeading d-inline-block card-category mb-4">
+                  Highlights
+                </h2>
+              </div> -->
+              <div class="row mt-0 mt-lg-5" id="highlights"></div>
+              <!-- <h6 class="text-center mb-5">
                 "Weaving words into worlds, one story at a time."
-              </h6>
+              </h6> -->
             </div>
             <div class="col-lg-3 text-center d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+              <div
+                class="card bg-transparent border-0"
+                style="width: 18rem; cursor: pointer"
+                onclick="location.href='/contact.html'"
+              >
                 <img
                   src="image/portrait_ajith.jpg"
-                  class="card-img-top"
+                  class="card-img-top rounded-3"
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">V.R. Ajith Kumar</h5>
-                  <p class="card-text">
-                    (b. 1960), a Malayalam author from Karunagappally, is
-                    known for his novels, children’s books, and critical works,
+                  <h5
+                    class="card-title highlightColor color-none highlightTitle"
+                  >
+                    V.R. Ajith Kumar
+                  </h5>
+                  <p class="card-text text-justify text-secondary">
+                    (b. 1960), a Malayalam author from Karunagappally, is known
+                    for his novels, children’s books, and critical works,
                     earning honors like the Vaikom Muhammad Basheer Award.
                   </p>
-                  <a href="/contact.html" class="card-link orange-solid-text"
+                  <a
+                    href="/contact.html"
+                    class="card-link highlightColor color-none highlightTitlesmall"
                     >About / Contact
                   </a>
                 </div>
@@ -125,9 +142,17 @@
         </div>
       </section>
 
-      <section>
-        <h3 class="hero-sub-title mt-5">Creative Writings</h3>
-        <li class="nav-item dropdown list-unstyled">
+      <section class="">
+        <div class="d-flex flex-column align-items-center my-5">
+          <h1
+            id="filter"
+            class="creativeHeading d-inline-block card-category custom-font"
+          >
+            CREATIVE WRITINGS
+          </h1>
+        </div>
+
+        <!-- <li class="nav-item dropdown list-unstyled">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -154,31 +179,166 @@
               <a class="dropdown-item" href="#articles">Articles</a>
             </li>
           </ul>
-        </li>
+        </li> -->
 
-        
+        <div
+          class="d-flex flex-wrap w-100 justify-content-center gap-3 align-items-center"
+        >
+          <a
+            href="#travelogues"
+            class="card-category text-decoration-none d-inline-block travelogueColor travelogueheadborder"
+          >
+            Travelogues
+          </a>
+          <a
+            href="#articles"
+            class="card-category pill-category text-decoration-none d-inline-block articleColor"
+            >Articles</a
+          >
+          <a
+            href="#short-stories"
+            class="card-category pill-category text-decoration-none d-inline-block shortStoriesColor"
+          >
+            Short Stories
+          </a>
+          <a
+            href="#novels"
+            class="card-category pill-category text-decoration-none d-inline-block novelColor"
+            >Novel</a
+          >
+          <a
+            href="#childrens-writing"
+            class="card-category pill-category text-decoration-none d-inline-block childrensWritingColor"
+          >
+            Childrens's Writings
+          </a>
+        </div>
+        <!--  -->
 
-        <h1 class="text-center hero-sub-title mt-5">Short Stories</h1>
-        <div id="short-stories" class="row d-flex justify-content-center"></div>
-
-        <h1 class="text-center hero-sub-title mt-5">Travelogues</h1>
+        <div class="d-flex flex-column align-items-center position-relative">
+          <img
+            src="/image/up-arrow.png"
+            width="30px"
+            onclick="scrollToElement('home-header')"
+            style="cursor: pointer"
+            class="top-btn green-arrow"
+          />
+          <h2
+            class="travelogueHeading d-inline-block card-category my-5 custom-font"
+          >
+            Travelogues
+          </h2>
+          <img
+            src="image/down-arrow.png"
+            width="30px"
+            onclick="scrollToElement('article-heading')"
+            style="cursor: pointer"
+            class="bottom-btn green-arrow"
+          />
+        </div>
         <div id="travelogues" class="row d-flex justify-content-center"></div>
 
-        <h1 class="text-center hero-sub-title mt-5">Articles</h1>
+        <!--  -->
+        <div class="d-flex flex-column align-items-center position-relative">
+          <img
+            src="/image/up-arrow.png"
+            width="30px"
+            onclick="scrollToElement('filter')"
+            style="cursor: pointer"
+            class="top-btn maroon-arrow"
+          />
+          <h2
+            id="article-heading"
+            class="articleHeading d-inline-block card-category custom-font my-5"
+          >
+            Articles
+          </h2>
+          <img
+            src="image/down-arrow.png"
+            width="30px"
+            onclick="scrollToElement('novel-heading')"
+            style="cursor: pointer"
+            class="bottom-btn maroon-arrow"
+          />
+        </div>
         <div id="articles" class="row d-flex justify-content-center"></div>
 
-        <h1 class="text-center hero-sub-title mt-5">Novels</h1>
+        <!--  -->
+        <div class="d-flex flex-column align-items-center position-relative">
+          <img
+            src="/image/up-arrow.png"
+            width="30px"
+            onclick="scrollToElement('filter')"
+            style="cursor: pointer"
+            class="top-btn novel-arrow"
+          />
+          <h2
+            id="novel-heading"
+            class="novelHeading d-inline-block card-category my-5 custom-font"
+          >
+            Novels
+          </h2>
+          <img
+            src="image/down-arrow.png"
+            width="30px"
+            onclick="scrollToElement('short-stories-heading')"
+            style="cursor: pointer"
+            class="bottom-btn novel-arrow"
+          />
+        </div>
         <div id="novels" class="row d-flex justify-content-center"></div>
 
-        <h1 class="text-center hero-sub-title mt-5">Children's Writing</h1>
+        <!--  -->
+        <div class="d-flex flex-column align-items-center position-relative">
+          <img
+            src="/image/up-arrow.png"
+            width="30px"
+            onclick="scrollToElement('filter')"
+            style="cursor: pointer"
+            class="top-btn shorts-arrow"
+          />
+          <h2
+            id="short-stories-heading"
+            class="shortstoryHeading d-inline-block card-category custom-font my-5"
+          >
+            Short Stories
+          </h2>
+          <img
+            src="image/down-arrow.png"
+            width="30px"
+            onclick="scrollToElement('childrens-writing-heading')"
+            style="cursor: pointer"
+            class="bottom-btn shorts-arrow"
+          />
+        </div>
+        <div id="short-stories" class="row d-flex justify-content-center"></div>
+
+        <!--  -->
+        <div class="d-flex flex-column align-items-center position-relative">
+          <img
+            src="/image/up-arrow.png"
+            width="30px"
+            onclick="scrollToElement('filter')"
+            style="cursor: pointer"
+            class="top-btn childrens-arrow"
+          />
+          <h2
+            id="childrens-writing-heading"
+            class="childrensWritingHeading d-inline-block custom-font card-category my-5"
+          >
+            Children's Writings
+          </h2>
+        </div>
         <div
           id="childrens-writing"
           class="row d-flex justify-content-center"
         ></div>
-
-        
+        <!--  -->
       </section>
     </main>
+    <footer class="position-absolute">
+      <div class="footer-color"></div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -42,16 +42,34 @@ function renderHighlights() {
   highlightsContainer.innerHTML = ""; // Clear container before rendering
   highlightsList.forEach((highlight) => {
     const cardHTML = `
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100 bg-transparent border-0" style="cursor: pointer;" onclick="location.href='${
+          highlight.link
+        }'">
           <div class="ratio ratio-4x3">
-          <img src="${highlight.image}" class="card-img-top img-fluid" alt="${highlight.title}">
+          <img src="${
+            highlight.image
+          }" class="card-img-top rounded-3 img-fluid" alt="${highlight.title}">
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="${highlight.link}" class="orange-solid-text">${highlight.title}</a>
+              <a href="${
+                highlight.link
+              }" class=" text-decoration-none highlightColor color-none highlightTitle ">${
+      highlight.title
+    }</a>
             </h5>
-            <p class="card-text truncate">${highlight.description}</p>
+            <p class="card-text truncate text-secondary">${highlight.description.slice(
+              0,
+              80
+            )}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-3">
+                <img src="image/portrait_ajith.jpg" class="rounded-circle" width="40px" alt="">
+                <p class="m-0 text-secondary ">V.R. Ajith Kumar</p>
+              </div>
+                <p class="card-category highlightColor  ">Highlights</p>
+              </div>
           </div>
         </div>
       </div>
@@ -86,14 +104,29 @@ function renderNovels() {
 
   novelsList.forEach((novel) => {
     const cardHTML = `
-      <div class="col-md-4 mb-4 p-0 px-sm-2">
-        <div class="card h-100" onclick="location.href='details.html?id=${novel.id}'" style="cursor: pointer;">
-        <div class="ratio ratio-4x3">
-          <img src="${novel.image}" class="card-img-top img-fluid" alt="${novel.title}">
+      <div class="col-md-6 col-lg-4 mb-4 p-0 px-sm-2 ">
+        <div class="card h-100 bg-transparent border-0" onclick="location.href='details.html?id=${
+          novel.id
+        }'" style="cursor: pointer;">
+        <div class="ratio ratio-4x3 ">
+          <img src="${
+            novel.image
+          }" class="card-img-top img-fluid rounded-3" alt="${novel.title}">
           </div>
           <div class="card-body">
-            <h5 class="card-title title-blue-small">${novel.title}</h5>
-            <p class="card-text">${novel.shortDescription}</p>
+            <h5 class="card-title title-blue-small novelColor color-none ">${
+              novel.title
+            }</h5>
+            <p class="card-text text-secondary">${
+              novel.shortDescription.slice(0, 80) + "..."
+            }</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-3">
+                <img src="image/portrait_ajith.jpg" class="rounded-circle" width="40px" alt="">
+                <p class="m-0 text-secondary ">V.R. Ajith Kumar</p>
+              </div>
+                <p class="card-category novelColor ">Novel</p>
+              </div>
           </div>
         </div>
       </div>
@@ -176,23 +209,44 @@ function displayHighlightDetails() {
       document.getElementById("highlight-details");
     const imagesetHtml = item.imageset
       ? `
-        <div class="image-gallery">
-          <img src="${item.imageset.image1}" class="gallery-img my-3 w-100" alt="Image 1">
-          <img src="${item.imageset.image2}" class="gallery-img my-3 w-100" alt="Image 2">
-          <img src="${item.imageset.image3}" class="gallery-img my-3 w-100" alt="Image 3">
-          <img src="${item.imageset.image4}" class="gallery-img my-3 w-100" alt="Image 4">
-          <img src="${item.imageset.image5}" class="gallery-img my-3 w-100" alt="Image 5">
+        <div class="image-gallery   ">
+          <img src="${item.imageset.image1}" class="gallery-img  w-100" alt="Image 1">
+          <img src="${item.imageset.image2}" class="gallery-img  w-100" alt="Image 2">
+          <img src="${item.imageset.image3}" class="gallery-img  w-100" alt="Image 3">
+          <img src="${item.image}" class="gallery-img  w-100" alt="${item.title}">
+          <img src="${item.imageset.image4}" class="gallery-img  w-100" alt="Image 4">
+          <img src="${item.imageset.image5}" class="gallery-img  w-100" alt="Image 5">
         </div>
       `
       : "";
     highlightDetailsContainer.innerHTML = `
       <div class="col-md-8 w-100 p-0">
-        <div class="card">
-          <img src="${item.image}" class="card-img-top" alt="${item.title}">
+        <div class="card bg-transparent border-0 flex align-items-center ">
+        <h1 class="card-title title-blue align-self-start">${item.title}</h1>
+        <div class="d-flex align-items-center gap-3 align-self-start mb-4">
+          <img src="image/portrait_ajith.jpg" class="rounded-circle" width="40px" alt="">
+          <p class="m-0 text-secondary ">V.R. Ajith Kumar</p>
+        </div>
+
+
+        <div class="ratio ratio-21x9 ">
+        <img src="${
+          item.image
+        }" class="card-img-top object-fit-fill mb-4  " alt="${item.title}">
+        </div>
+          
           <div class="card-body">
-            <h1 class="card-title title-blue">${item.title}</h1>
-            <div class="card-text">${item.longDescription || item.description}</div>
+
+            
+            
+            <div class="card-text">${
+              item.longDescription || item.description
+            }</div>
             <div>${imagesetHtml}</div>
+            <div class="">
+            <h2 class="title-pink">Summary</h2>
+            <p class="text-secondary ">${item.shortDescription}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -209,3 +263,8 @@ function displayHighlightDetails() {
 // Call render functions if the containers exist
 if (document.getElementById("highlights")) fetchAndMergeHighlights();
 if (document.getElementById("novels")) fetchAndMergeNovels();
+
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+  element.scrollIntoView({ behavior: "smooth" });
+}
