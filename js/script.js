@@ -235,7 +235,7 @@ function displayHighlightDetails() {
         }" class="card-img-top object-fit-fill mb-4  " alt="${item.title}">
         </div>
           
-          <div class="card-body">
+          <div class="card-body align-self-stretch">
 
             
             
