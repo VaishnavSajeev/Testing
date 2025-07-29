@@ -34,6 +34,13 @@
       "link": "https://penandpaths.netlify.app/details.html?id=2002",
       "description": "Children's  story  - The crow named Kuttan ",
       "image": "/image/kuttan-kakka.png"
+    },
+    {
+      "id": 6,
+      "link": "https://penandpaths.netlify.app/details.html?id=4018",
+      "title": "Thanjavur: A Day Among Temples, Art, and Wings",
+      "description": "In June 2025, V.R. Ajith Kumar visited Thanjavur with his family, exploring its rich cultural heritage. Highlights included the majestic Brihadeeswarar Temple—an architectural marvel from the Chola era—and the historic Nayak-Maratha Palace, featuring the Saraswathi Mahal Library and Sangeetha Mahal. He also visited the traditional Thanjavur Veena and painting workshops, both facing a decline due to waning interest and lack of artisans. The day concluded at the Rajali Exotic Bird Center, a delightful experience for children. The trip offered a vibrant blend of history, art, music, and nature, showcasing Thanjavur’s enduring legacy and cultural brilliance in just one day.",
+      "image": "/image/thans-1.jpg"
     }
   ]
 }
